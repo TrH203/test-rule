@@ -1,0 +1,5560 @@
+[
+  {
+    "frame_id": 1,
+    "timestamp": 1696500000,
+    "tracked_objects": [
+      {
+        "track_id": 1,
+        "obj_name": "worker",
+        "current_attribute": {
+          "class_name": "person",
+          "speed": 5.0,
+          "direction": 0,
+          "state": "moving",
+          "action": "walking",
+          "color": "blue",
+          "ppe_status": {
+            "helmet": true,
+            "vest": true
+          },
+          "nearby_objects": {
+            "2": 205,
+            "3": 265,
+            "4": 95
+          },
+          "comovement": {},
+          "timers": {},
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 1,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                105,
+                200,
+                165,
+                380
+              ],
+              "score": 0.98,
+              "class_name": "person"
+            },
+            "pose": {
+              "keypoints": [
+                [
+                  115,
+                  210,
+                  0.71
+                ],
+                [
+                  120,
+                  230,
+                  0.71
+                ],
+                [
+                  123,
+                  255,
+                  0.71
+                ],
+                [
+                  105,
+                  225,
+                  0.71
+                ],
+                [
+                  135,
+                  225,
+                  0.71
+                ]
+              ],
+              "score": 0.71
+            },
+            "segmentation": {
+              "points": [
+                105,
+                200,
+                135,
+                240
+              ],
+              "score": 0.85
+            },
+            "attribute": {
+              "class_name": "person",
+              "speed": 5.0,
+              "direction": 0,
+              "state": "moving",
+              "action": "walking",
+              "color": "blue",
+              "ppe_status": {
+                "helmet": true,
+                "vest": true
+              },
+              "nearby_objects": {
+                "2": 205,
+                "3": 265,
+                "4": 95
+              },
+              "comovement": {},
+              "timers": {},
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      },
+      {
+        "track_id": 2,
+        "obj_name": "worker_2",
+        "current_attribute": {
+          "class_name": "person",
+          "speed": 0.0,
+          "direction": 0,
+          "state": "stationary",
+          "action": "standing",
+          "color": "orange",
+          "ppe_status": {
+            "helmet": true,
+            "vest": true
+          },
+          "nearby_objects": {
+            "1": 205,
+            "4": 190
+          },
+          "comovement": {},
+          "timers": {
+            "loiter": 0.0
+          },
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 1,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                300,
+                210,
+                360,
+                390
+              ],
+              "score": 0.9,
+              "class_name": "person"
+            },
+            "pose": {
+              "keypoints": [
+                [
+                  310,
+                  220,
+                  0.77
+                ],
+                [
+                  315,
+                  240,
+                  0.77
+                ],
+                [
+                  318,
+                  265,
+                  0.77
+                ],
+                [
+                  300,
+                  235,
+                  0.77
+                ],
+                [
+                  330,
+                  235,
+                  0.77
+                ]
+              ],
+              "score": 0.77
+            },
+            "segmentation": {
+              "points": [
+                300,
+                210,
+                330,
+                250
+              ],
+              "score": 0.7
+            },
+            "attribute": {
+              "class_name": "person",
+              "speed": 0.0,
+              "direction": 0,
+              "state": "stationary",
+              "action": "standing",
+              "color": "orange",
+              "ppe_status": {
+                "helmet": true,
+                "vest": true
+              },
+              "nearby_objects": {
+                "1": 205,
+                "4": 190
+              },
+              "comovement": {},
+              "timers": {
+                "loiter": 0.0
+              },
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      },
+      {
+        "track_id": 3,
+        "obj_name": "obj_3",
+        "current_attribute": {
+          "class_name": "vehicle",
+          "speed": 40.0,
+          "direction": 0,
+          "state": "moving",
+          "action": "walking",
+          "color": "gray",
+          "ppe_status": {},
+          "nearby_objects": {
+            "1": 265,
+            "2": 450,
+            "4": 260
+          },
+          "comovement": {},
+          "timers": {},
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 1,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                40,
+                400,
+                160,
+                460
+              ],
+              "score": 0.89,
+              "class_name": "vehicle"
+            },
+            "pose": null,
+            "segmentation": {
+              "points": [
+                40,
+                400,
+                70,
+                440
+              ],
+              "score": 0.83
+            },
+            "attribute": {
+              "class_name": "vehicle",
+              "speed": 40.0,
+              "direction": 0,
+              "state": "moving",
+              "action": "walking",
+              "color": "gray",
+              "ppe_status": {},
+              "nearby_objects": {
+                "1": 265,
+                "2": 450,
+                "4": 260
+              },
+              "comovement": {},
+              "timers": {},
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      },
+      {
+        "track_id": 4,
+        "obj_name": "worker_4",
+        "current_attribute": {
+          "class_name": "person",
+          "speed": 0.0,
+          "direction": 0,
+          "state": "stationary",
+          "action": "standing",
+          "color": "green",
+          "ppe_status": {
+            "helmet": true,
+            "vest": true
+          },
+          "nearby_objects": {
+            "2": 190,
+            "3": 260
+          },
+          "comovement": {},
+          "timers": {},
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 1,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                150,
+                250,
+                210,
+                430
+              ],
+              "score": 0.85,
+              "class_name": "person"
+            },
+            "pose": {
+              "keypoints": [
+                [
+                  160,
+                  260,
+                  0.96
+                ],
+                [
+                  165,
+                  280,
+                  0.96
+                ],
+                [
+                  168,
+                  305,
+                  0.96
+                ],
+                [
+                  150,
+                  275,
+                  0.96
+                ],
+                [
+                  180,
+                  275,
+                  0.96
+                ]
+              ],
+              "score": 0.96
+            },
+            "segmentation": {
+              "points": [
+                150,
+                250,
+                180,
+                290
+              ],
+              "score": 0.86
+            },
+            "attribute": {
+              "class_name": "person",
+              "speed": 0.0,
+              "direction": 0,
+              "state": "stationary",
+              "action": "standing",
+              "color": "green",
+              "ppe_status": {
+                "helmet": true,
+                "vest": true
+              },
+              "nearby_objects": {
+                "2": 190,
+                "3": 260
+              },
+              "comovement": {},
+              "timers": {},
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      }
+    ],
+    "global_vars": {
+      "zone_temperature": 26.33,
+      "alert_threshold": 0.8
+    },
+    "events": []
+  },
+  {
+    "frame_id": 2,
+    "timestamp": 1696500000,
+    "tracked_objects": [
+      {
+        "track_id": 1,
+        "obj_name": "worker_1",
+        "current_attribute": {
+          "class_name": "person",
+          "speed": 5.0,
+          "direction": 0,
+          "state": "moving",
+          "action": "walking",
+          "color": "blue",
+          "ppe_status": {
+            "helmet": true,
+            "vest": true
+          },
+          "nearby_objects": {
+            "4": 90
+          },
+          "comovement": {},
+          "timers": {},
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 2,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                110,
+                200,
+                170,
+                380
+              ],
+              "score": 0.88,
+              "class_name": "person"
+            },
+            "pose": {
+              "keypoints": [
+                [
+                  120,
+                  210,
+                  0.87
+                ],
+                [
+                  125,
+                  230,
+                  0.87
+                ],
+                [
+                  128,
+                  255,
+                  0.87
+                ],
+                [
+                  110,
+                  225,
+                  0.87
+                ],
+                [
+                  140,
+                  225,
+                  0.87
+                ]
+              ],
+              "score": 0.87
+            },
+            "segmentation": {
+              "points": [
+                110,
+                200,
+                140,
+                240
+              ],
+              "score": 0.85
+            },
+            "attribute": {
+              "class_name": "person",
+              "speed": 5.0,
+              "direction": 0,
+              "state": "moving",
+              "action": "walking",
+              "color": "blue",
+              "ppe_status": {
+                "helmet": true,
+                "vest": true
+              },
+              "nearby_objects": {
+                "4": 90
+              },
+              "comovement": {},
+              "timers": {},
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      },
+      {
+        "track_id": 2,
+        "obj_name": "worker_2",
+        "current_attribute": {
+          "class_name": "person",
+          "speed": 0.0,
+          "direction": 0,
+          "state": "stationary",
+          "action": "standing",
+          "color": "orange",
+          "ppe_status": {
+            "helmet": true,
+            "vest": true
+          },
+          "nearby_objects": {
+            "3": 410,
+            "4": 190
+          },
+          "comovement": {},
+          "timers": {
+            "loiter": 0.0
+          },
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 2,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                300,
+                210,
+                360,
+                390
+              ],
+              "score": 0.92,
+              "class_name": "person"
+            },
+            "pose": {
+              "keypoints": [
+                [
+                  310,
+                  220,
+                  0.89
+                ],
+                [
+                  315,
+                  240,
+                  0.89
+                ],
+                [
+                  318,
+                  265,
+                  0.89
+                ],
+                [
+                  300,
+                  235,
+                  0.89
+                ],
+                [
+                  330,
+                  235,
+                  0.89
+                ]
+              ],
+              "score": 0.89
+            },
+            "segmentation": {
+              "points": [
+                300,
+                210,
+                330,
+                250
+              ],
+              "score": 0.88
+            },
+            "attribute": {
+              "class_name": "person",
+              "speed": 0.0,
+              "direction": 0,
+              "state": "stationary",
+              "action": "standing",
+              "color": "orange",
+              "ppe_status": {
+                "helmet": true,
+                "vest": true
+              },
+              "nearby_objects": {
+                "3": 410,
+                "4": 190
+              },
+              "comovement": {},
+              "timers": {
+                "loiter": 0.0
+              },
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      },
+      {
+        "track_id": 3,
+        "obj_name": "obj_3",
+        "current_attribute": {
+          "class_name": "vehicle",
+          "speed": 40.0,
+          "direction": 0,
+          "state": "moving",
+          "action": "walking",
+          "color": "gray",
+          "ppe_status": {},
+          "nearby_objects": {
+            "4": 220
+          },
+          "comovement": {},
+          "timers": {},
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 2,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                80,
+                400,
+                200,
+                460
+              ],
+              "score": 0.9,
+              "class_name": "vehicle"
+            },
+            "pose": null,
+            "segmentation": {
+              "points": [
+                80,
+                400,
+                110,
+                440
+              ],
+              "score": 0.71
+            },
+            "attribute": {
+              "class_name": "vehicle",
+              "speed": 40.0,
+              "direction": 0,
+              "state": "moving",
+              "action": "walking",
+              "color": "gray",
+              "ppe_status": {},
+              "nearby_objects": {
+                "4": 220
+              },
+              "comovement": {},
+              "timers": {},
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      },
+      {
+        "track_id": 4,
+        "obj_name": "worker_4",
+        "current_attribute": {
+          "class_name": "person",
+          "speed": 0.0,
+          "direction": 0,
+          "state": "stationary",
+          "action": "standing",
+          "color": "green",
+          "ppe_status": {
+            "helmet": true,
+            "vest": true
+          },
+          "nearby_objects": {
+            "2": 190
+          },
+          "comovement": {},
+          "timers": {},
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 2,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                150,
+                250,
+                210,
+                430
+              ],
+              "score": 0.94,
+              "class_name": "person"
+            },
+            "pose": {
+              "keypoints": [
+                [
+                  160,
+                  260,
+                  0.75
+                ],
+                [
+                  165,
+                  280,
+                  0.75
+                ],
+                [
+                  168,
+                  305,
+                  0.75
+                ],
+                [
+                  150,
+                  275,
+                  0.75
+                ],
+                [
+                  180,
+                  275,
+                  0.75
+                ]
+              ],
+              "score": 0.75
+            },
+            "segmentation": {
+              "points": [
+                150,
+                250,
+                180,
+                290
+              ],
+              "score": 0.79
+            },
+            "attribute": {
+              "class_name": "person",
+              "speed": 0.0,
+              "direction": 0,
+              "state": "stationary",
+              "action": "standing",
+              "color": "green",
+              "ppe_status": {
+                "helmet": true,
+                "vest": true
+              },
+              "nearby_objects": {
+                "2": 190
+              },
+              "comovement": {},
+              "timers": {},
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      }
+    ],
+    "global_vars": {
+      "zone_temperature": 26.96,
+      "alert_threshold": 0.8
+    },
+    "events": []
+  },
+  {
+    "frame_id": 3,
+    "timestamp": 1696500000,
+    "tracked_objects": [
+      {
+        "track_id": 1,
+        "obj_name": "worker_1",
+        "current_attribute": {
+          "class_name": "person",
+          "speed": 5.0,
+          "direction": 0,
+          "state": "moving",
+          "action": "walking",
+          "color": "blue",
+          "ppe_status": {
+            "helmet": true,
+            "vest": false
+          },
+          "nearby_objects": {
+            "2": 195,
+            "3": 205,
+            "4": 85
+          },
+          "comovement": {},
+          "timers": {},
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 3,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                115,
+                200,
+                175,
+                380
+              ],
+              "score": 0.88,
+              "class_name": "person"
+            },
+            "pose": {
+              "keypoints": [
+                [
+                  125,
+                  210,
+                  0.72
+                ],
+                [
+                  130,
+                  230,
+                  0.72
+                ],
+                [
+                  133,
+                  255,
+                  0.72
+                ],
+                [
+                  115,
+                  225,
+                  0.72
+                ],
+                [
+                  145,
+                  225,
+                  0.72
+                ]
+              ],
+              "score": 0.72
+            },
+            "segmentation": {
+              "points": [
+                115,
+                200,
+                145,
+                240
+              ],
+              "score": 0.88
+            },
+            "attribute": {
+              "class_name": "person",
+              "speed": 5.0,
+              "direction": 0,
+              "state": "moving",
+              "action": "walking",
+              "color": "blue",
+              "ppe_status": {
+                "helmet": true,
+                "vest": false
+              },
+              "nearby_objects": {
+                "2": 195,
+                "3": 205,
+                "4": 85
+              },
+              "comovement": {},
+              "timers": {},
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      },
+      {
+        "track_id": 2,
+        "obj_name": "worker_2",
+        "current_attribute": {
+          "class_name": "person",
+          "speed": 0.0,
+          "direction": 0,
+          "state": "stationary",
+          "action": "standing",
+          "color": "orange",
+          "ppe_status": {
+            "helmet": true,
+            "vest": true
+          },
+          "nearby_objects": {
+            "1": 195,
+            "3": 370,
+            "4": 190
+          },
+          "comovement": {},
+          "timers": {
+            "loiter": 0.0
+          },
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 3,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                300,
+                210,
+                360,
+                390
+              ],
+              "score": 0.95,
+              "class_name": "person"
+            },
+            "pose": {
+              "keypoints": [
+                [
+                  310,
+                  220,
+                  0.95
+                ],
+                [
+                  315,
+                  240,
+                  0.95
+                ],
+                [
+                  318,
+                  265,
+                  0.95
+                ],
+                [
+                  300,
+                  235,
+                  0.95
+                ],
+                [
+                  330,
+                  235,
+                  0.95
+                ]
+              ],
+              "score": 0.95
+            },
+            "segmentation": {
+              "points": [
+                300,
+                210,
+                330,
+                250
+              ],
+              "score": 0.88
+            },
+            "attribute": {
+              "class_name": "person",
+              "speed": 0.0,
+              "direction": 0,
+              "state": "stationary",
+              "action": "standing",
+              "color": "orange",
+              "ppe_status": {
+                "helmet": true,
+                "vest": true
+              },
+              "nearby_objects": {
+                "1": 195,
+                "3": 370,
+                "4": 190
+              },
+              "comovement": {},
+              "timers": {
+                "loiter": 0.0
+              },
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      },
+      {
+        "track_id": 3,
+        "obj_name": "obj_3",
+        "current_attribute": {
+          "class_name": "vehicle",
+          "speed": 40.0,
+          "direction": 0,
+          "state": "moving",
+          "action": "walking",
+          "color": "gray",
+          "ppe_status": {},
+          "nearby_objects": {},
+          "comovement": {},
+          "timers": {},
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 3,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                120,
+                400,
+                240,
+                460
+              ],
+              "score": 0.92,
+              "class_name": "vehicle"
+            },
+            "pose": null,
+            "segmentation": {
+              "points": [
+                120,
+                400,
+                150,
+                440
+              ],
+              "score": 0.75
+            },
+            "attribute": {
+              "class_name": "vehicle",
+              "speed": 40.0,
+              "direction": 0,
+              "state": "moving",
+              "action": "walking",
+              "color": "gray",
+              "ppe_status": {},
+              "nearby_objects": {},
+              "comovement": {},
+              "timers": {},
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      },
+      {
+        "track_id": 4,
+        "obj_name": "worker_4",
+        "current_attribute": {
+          "class_name": "person",
+          "speed": 0.0,
+          "direction": 0,
+          "state": "stationary",
+          "action": "standing",
+          "color": "green",
+          "ppe_status": {
+            "helmet": true,
+            "vest": true
+          },
+          "nearby_objects": {
+            "2": 190
+          },
+          "comovement": {},
+          "timers": {},
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 3,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                150,
+                250,
+                210,
+                430
+              ],
+              "score": 0.87,
+              "class_name": "person"
+            },
+            "pose": {
+              "keypoints": [
+                [
+                  160,
+                  260,
+                  0.75
+                ],
+                [
+                  165,
+                  280,
+                  0.75
+                ],
+                [
+                  168,
+                  305,
+                  0.75
+                ],
+                [
+                  150,
+                  275,
+                  0.75
+                ],
+                [
+                  180,
+                  275,
+                  0.75
+                ]
+              ],
+              "score": 0.75
+            },
+            "segmentation": {
+              "points": [
+                150,
+                250,
+                180,
+                290
+              ],
+              "score": 0.77
+            },
+            "attribute": {
+              "class_name": "person",
+              "speed": 0.0,
+              "direction": 0,
+              "state": "stationary",
+              "action": "standing",
+              "color": "green",
+              "ppe_status": {
+                "helmet": true,
+                "vest": true
+              },
+              "nearby_objects": {
+                "2": 190
+              },
+              "comovement": {},
+              "timers": {},
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      }
+    ],
+    "global_vars": {
+      "zone_temperature": 26.76,
+      "alert_threshold": 0.8
+    },
+    "events": [
+      {
+        "name": "ppe_violation",
+        "frame_id": 3,
+        "timestamp": 1696500000,
+        "data": {
+          "track_id": 1,
+          "missing_item": "vest"
+        }
+      }
+    ]
+  },
+  {
+    "frame_id": 4,
+    "timestamp": 1696500000,
+    "tracked_objects": [
+      {
+        "track_id": 1,
+        "obj_name": "worker_1",
+        "current_attribute": {
+          "class_name": "person",
+          "speed": 5.0,
+          "direction": 0,
+          "state": "moving",
+          "action": "walking",
+          "color": "blue",
+          "ppe_status": {
+            "helmet": true,
+            "vest": false
+          },
+          "nearby_objects": {
+            "2": 190,
+            "3": 240,
+            "4": 80
+          },
+          "comovement": {},
+          "timers": {},
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 4,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                120,
+                200,
+                180,
+                380
+              ],
+              "score": 0.86,
+              "class_name": "person"
+            },
+            "pose": {
+              "keypoints": [
+                [
+                  130,
+                  210,
+                  0.8
+                ],
+                [
+                  135,
+                  230,
+                  0.8
+                ],
+                [
+                  138,
+                  255,
+                  0.8
+                ],
+                [
+                  120,
+                  225,
+                  0.8
+                ],
+                [
+                  150,
+                  225,
+                  0.8
+                ]
+              ],
+              "score": 0.8
+            },
+            "segmentation": {
+              "points": [
+                120,
+                200,
+                150,
+                240
+              ],
+              "score": 0.72
+            },
+            "attribute": {
+              "class_name": "person",
+              "speed": 5.0,
+              "direction": 0,
+              "state": "moving",
+              "action": "walking",
+              "color": "blue",
+              "ppe_status": {
+                "helmet": true,
+                "vest": false
+              },
+              "nearby_objects": {
+                "2": 190,
+                "3": 240,
+                "4": 80
+              },
+              "comovement": {},
+              "timers": {},
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      },
+      {
+        "track_id": 2,
+        "obj_name": "worker_2",
+        "current_attribute": {
+          "class_name": "person",
+          "speed": 0.0,
+          "direction": 0,
+          "state": "stationary",
+          "action": "standing",
+          "color": "orange",
+          "ppe_status": {
+            "helmet": true,
+            "vest": true
+          },
+          "nearby_objects": {
+            "1": 190,
+            "3": 330,
+            "4": 190
+          },
+          "comovement": {},
+          "timers": {
+            "loiter": 0.0
+          },
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 4,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                300,
+                210,
+                360,
+                390
+              ],
+              "score": 0.95,
+              "class_name": "person"
+            },
+            "pose": {
+              "keypoints": [
+                [
+                  310,
+                  220,
+                  0.81
+                ],
+                [
+                  315,
+                  240,
+                  0.81
+                ],
+                [
+                  318,
+                  265,
+                  0.81
+                ],
+                [
+                  300,
+                  235,
+                  0.81
+                ],
+                [
+                  330,
+                  235,
+                  0.81
+                ]
+              ],
+              "score": 0.81
+            },
+            "segmentation": {
+              "points": [
+                300,
+                210,
+                330,
+                250
+              ],
+              "score": 0.98
+            },
+            "attribute": {
+              "class_name": "person",
+              "speed": 0.0,
+              "direction": 0,
+              "state": "stationary",
+              "action": "standing",
+              "color": "orange",
+              "ppe_status": {
+                "helmet": true,
+                "vest": true
+              },
+              "nearby_objects": {
+                "1": 190,
+                "3": 330,
+                "4": 190
+              },
+              "comovement": {},
+              "timers": {
+                "loiter": 0.0
+              },
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      },
+      {
+        "track_id": 3,
+        "obj_name": "obj_3",
+        "current_attribute": {
+          "class_name": "vehicle",
+          "speed": 40.0,
+          "direction": 0,
+          "state": "moving",
+          "action": "walking",
+          "color": "gray",
+          "ppe_status": {},
+          "nearby_objects": {
+            "1": 240,
+            "2": 330
+          },
+          "comovement": {},
+          "timers": {},
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 4,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                160,
+                400,
+                280,
+                460
+              ],
+              "score": 0.9,
+              "class_name": "vehicle"
+            },
+            "pose": null,
+            "segmentation": {
+              "points": [
+                160,
+                400,
+                190,
+                440
+              ],
+              "score": 0.88
+            },
+            "attribute": {
+              "class_name": "vehicle",
+              "speed": 40.0,
+              "direction": 0,
+              "state": "moving",
+              "action": "walking",
+              "color": "gray",
+              "ppe_status": {},
+              "nearby_objects": {
+                "1": 240,
+                "2": 330
+              },
+              "comovement": {},
+              "timers": {},
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      },
+      {
+        "track_id": 4,
+        "obj_name": "worker_4",
+        "current_attribute": {
+          "class_name": "person",
+          "speed": 0.0,
+          "direction": 0,
+          "state": "stationary",
+          "action": "standing",
+          "color": "green",
+          "ppe_status": {
+            "helmet": true,
+            "vest": true
+          },
+          "nearby_objects": {
+            "3": 160
+          },
+          "comovement": {},
+          "timers": {},
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 4,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                150,
+                250,
+                210,
+                430
+              ],
+              "score": 0.95,
+              "class_name": "person"
+            },
+            "pose": {
+              "keypoints": [
+                [
+                  160,
+                  260,
+                  0.8
+                ],
+                [
+                  165,
+                  280,
+                  0.8
+                ],
+                [
+                  168,
+                  305,
+                  0.8
+                ],
+                [
+                  150,
+                  275,
+                  0.8
+                ],
+                [
+                  180,
+                  275,
+                  0.8
+                ]
+              ],
+              "score": 0.8
+            },
+            "segmentation": {
+              "points": [
+                150,
+                250,
+                180,
+                290
+              ],
+              "score": 0.77
+            },
+            "attribute": {
+              "class_name": "person",
+              "speed": 0.0,
+              "direction": 0,
+              "state": "stationary",
+              "action": "standing",
+              "color": "green",
+              "ppe_status": {
+                "helmet": true,
+                "vest": true
+              },
+              "nearby_objects": {
+                "3": 160
+              },
+              "comovement": {},
+              "timers": {},
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      }
+    ],
+    "global_vars": {
+      "zone_temperature": 25.39,
+      "alert_threshold": 0.8
+    },
+    "events": []
+  },
+  {
+    "frame_id": 5,
+    "timestamp": 1696500000,
+    "tracked_objects": [
+      {
+        "track_id": 1,
+        "obj_name": "worker_1",
+        "current_attribute": {
+          "class_name": "person",
+          "speed": 5.0,
+          "direction": 0,
+          "state": "moving",
+          "action": "walking",
+          "color": "blue",
+          "ppe_status": {
+            "helmet": true,
+            "vest": false
+          },
+          "nearby_objects": {
+            "3": 275,
+            "4": 75
+          },
+          "comovement": {},
+          "timers": {},
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 5,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                125,
+                200,
+                185,
+                380
+              ],
+              "score": 0.87,
+              "class_name": "person"
+            },
+            "pose": {
+              "keypoints": [
+                [
+                  135,
+                  210,
+                  0.88
+                ],
+                [
+                  140,
+                  230,
+                  0.88
+                ],
+                [
+                  143,
+                  255,
+                  0.88
+                ],
+                [
+                  125,
+                  225,
+                  0.88
+                ],
+                [
+                  155,
+                  225,
+                  0.88
+                ]
+              ],
+              "score": 0.88
+            },
+            "segmentation": {
+              "points": [
+                125,
+                200,
+                155,
+                240
+              ],
+              "score": 0.96
+            },
+            "attribute": {
+              "class_name": "person",
+              "speed": 5.0,
+              "direction": 0,
+              "state": "moving",
+              "action": "walking",
+              "color": "blue",
+              "ppe_status": {
+                "helmet": true,
+                "vest": false
+              },
+              "nearby_objects": {
+                "3": 275,
+                "4": 75
+              },
+              "comovement": {},
+              "timers": {},
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      },
+      {
+        "track_id": 2,
+        "obj_name": "worker_2",
+        "current_attribute": {
+          "class_name": "person",
+          "speed": 0.0,
+          "direction": 0,
+          "state": "stationary",
+          "action": "standing",
+          "color": "orange",
+          "ppe_status": {
+            "helmet": true,
+            "vest": true
+          },
+          "nearby_objects": {
+            "3": 290,
+            "4": 190
+          },
+          "comovement": {},
+          "timers": {
+            "loiter": 0.0
+          },
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 5,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                300,
+                210,
+                360,
+                390
+              ],
+              "score": 0.92,
+              "class_name": "person"
+            },
+            "pose": {
+              "keypoints": [
+                [
+                  310,
+                  220,
+                  0.88
+                ],
+                [
+                  315,
+                  240,
+                  0.88
+                ],
+                [
+                  318,
+                  265,
+                  0.88
+                ],
+                [
+                  300,
+                  235,
+                  0.88
+                ],
+                [
+                  330,
+                  235,
+                  0.88
+                ]
+              ],
+              "score": 0.88
+            },
+            "segmentation": {
+              "points": [
+                300,
+                210,
+                330,
+                250
+              ],
+              "score": 0.92
+            },
+            "attribute": {
+              "class_name": "person",
+              "speed": 0.0,
+              "direction": 0,
+              "state": "stationary",
+              "action": "standing",
+              "color": "orange",
+              "ppe_status": {
+                "helmet": true,
+                "vest": true
+              },
+              "nearby_objects": {
+                "3": 290,
+                "4": 190
+              },
+              "comovement": {},
+              "timers": {
+                "loiter": 0.0
+              },
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      },
+      {
+        "track_id": 3,
+        "obj_name": "obj_3",
+        "current_attribute": {
+          "class_name": "vehicle",
+          "speed": 40.0,
+          "direction": 0,
+          "state": "moving",
+          "action": "walking",
+          "color": "gray",
+          "ppe_status": {},
+          "nearby_objects": {
+            "1": 275,
+            "2": 290,
+            "4": 200
+          },
+          "comovement": {},
+          "timers": {},
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 5,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                200,
+                400,
+                320,
+                460
+              ],
+              "score": 0.9,
+              "class_name": "vehicle"
+            },
+            "pose": null,
+            "segmentation": {
+              "points": [
+                200,
+                400,
+                230,
+                440
+              ],
+              "score": 0.94
+            },
+            "attribute": {
+              "class_name": "vehicle",
+              "speed": 40.0,
+              "direction": 0,
+              "state": "moving",
+              "action": "walking",
+              "color": "gray",
+              "ppe_status": {},
+              "nearby_objects": {
+                "1": 275,
+                "2": 290,
+                "4": 200
+              },
+              "comovement": {},
+              "timers": {},
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      },
+      {
+        "track_id": 4,
+        "obj_name": "worker_4",
+        "current_attribute": {
+          "class_name": "person",
+          "speed": 0.0,
+          "direction": 0,
+          "state": "stationary",
+          "action": "standing",
+          "color": "green",
+          "ppe_status": {
+            "helmet": true,
+            "vest": true
+          },
+          "nearby_objects": {},
+          "comovement": {},
+          "timers": {},
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 5,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                150,
+                250,
+                210,
+                430
+              ],
+              "score": 0.96,
+              "class_name": "person"
+            },
+            "pose": {
+              "keypoints": [
+                [
+                  160,
+                  260,
+                  0.71
+                ],
+                [
+                  165,
+                  280,
+                  0.71
+                ],
+                [
+                  168,
+                  305,
+                  0.71
+                ],
+                [
+                  150,
+                  275,
+                  0.71
+                ],
+                [
+                  180,
+                  275,
+                  0.71
+                ]
+              ],
+              "score": 0.71
+            },
+            "segmentation": {
+              "points": [
+                150,
+                250,
+                180,
+                290
+              ],
+              "score": 0.85
+            },
+            "attribute": {
+              "class_name": "person",
+              "speed": 0.0,
+              "direction": 0,
+              "state": "stationary",
+              "action": "standing",
+              "color": "green",
+              "ppe_status": {
+                "helmet": true,
+                "vest": true
+              },
+              "nearby_objects": {},
+              "comovement": {},
+              "timers": {},
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      }
+    ],
+    "global_vars": {
+      "zone_temperature": 29.36,
+      "alert_threshold": 0.8
+    },
+    "events": []
+  },
+  {
+    "frame_id": 6,
+    "timestamp": 1696500000,
+    "tracked_objects": [
+      {
+        "track_id": 1,
+        "obj_name": "worker_1",
+        "current_attribute": {
+          "class_name": "person",
+          "speed": 5.0,
+          "direction": 0,
+          "state": "moving",
+          "action": "walking",
+          "color": "blue",
+          "ppe_status": {
+            "helmet": true,
+            "vest": true
+          },
+          "nearby_objects": {
+            "2": 180,
+            "3": 310,
+            "4": 70
+          },
+          "comovement": {},
+          "timers": {},
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 6,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                130,
+                200,
+                190,
+                380
+              ],
+              "score": 0.9,
+              "class_name": "person"
+            },
+            "pose": {
+              "keypoints": [
+                [
+                  140,
+                  210,
+                  0.95
+                ],
+                [
+                  145,
+                  230,
+                  0.95
+                ],
+                [
+                  148,
+                  255,
+                  0.95
+                ],
+                [
+                  130,
+                  225,
+                  0.95
+                ],
+                [
+                  160,
+                  225,
+                  0.95
+                ]
+              ],
+              "score": 0.95
+            },
+            "segmentation": {
+              "points": [
+                130,
+                200,
+                160,
+                240
+              ],
+              "score": 0.8
+            },
+            "attribute": {
+              "class_name": "person",
+              "speed": 5.0,
+              "direction": 0,
+              "state": "moving",
+              "action": "walking",
+              "color": "blue",
+              "ppe_status": {
+                "helmet": true,
+                "vest": true
+              },
+              "nearby_objects": {
+                "2": 180,
+                "3": 310,
+                "4": 70
+              },
+              "comovement": {},
+              "timers": {},
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      },
+      {
+        "track_id": 2,
+        "obj_name": "worker_2",
+        "current_attribute": {
+          "class_name": "person",
+          "speed": 0.0,
+          "direction": 0,
+          "state": "stationary",
+          "action": "standing",
+          "color": "orange",
+          "ppe_status": {
+            "helmet": true,
+            "vest": true
+          },
+          "nearby_objects": {
+            "1": 180,
+            "3": 250,
+            "4": 190
+          },
+          "comovement": {},
+          "timers": {
+            "loiter": 0.5
+          },
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 6,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                300,
+                210,
+                360,
+                390
+              ],
+              "score": 0.91,
+              "class_name": "person"
+            },
+            "pose": {
+              "keypoints": [
+                [
+                  310,
+                  220,
+                  0.96
+                ],
+                [
+                  315,
+                  240,
+                  0.96
+                ],
+                [
+                  318,
+                  265,
+                  0.96
+                ],
+                [
+                  300,
+                  235,
+                  0.96
+                ],
+                [
+                  330,
+                  235,
+                  0.96
+                ]
+              ],
+              "score": 0.96
+            },
+            "segmentation": {
+              "points": [
+                300,
+                210,
+                330,
+                250
+              ],
+              "score": 0.72
+            },
+            "attribute": {
+              "class_name": "person",
+              "speed": 0.0,
+              "direction": 0,
+              "state": "stationary",
+              "action": "standing",
+              "color": "orange",
+              "ppe_status": {
+                "helmet": true,
+                "vest": true
+              },
+              "nearby_objects": {
+                "1": 180,
+                "3": 250,
+                "4": 190
+              },
+              "comovement": {},
+              "timers": {
+                "loiter": 0.5
+              },
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      },
+      {
+        "track_id": 3,
+        "obj_name": "obj_3",
+        "current_attribute": {
+          "class_name": "vehicle",
+          "speed": 40.0,
+          "direction": 0,
+          "state": "moving",
+          "action": "walking",
+          "color": "gray",
+          "ppe_status": {},
+          "nearby_objects": {
+            "1": 310,
+            "2": 250
+          },
+          "comovement": {},
+          "timers": {},
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 6,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                240,
+                400,
+                360,
+                460
+              ],
+              "score": 0.88,
+              "class_name": "vehicle"
+            },
+            "pose": null,
+            "segmentation": {
+              "points": [
+                240,
+                400,
+                270,
+                440
+              ],
+              "score": 0.86
+            },
+            "attribute": {
+              "class_name": "vehicle",
+              "speed": 40.0,
+              "direction": 0,
+              "state": "moving",
+              "action": "walking",
+              "color": "gray",
+              "ppe_status": {},
+              "nearby_objects": {
+                "1": 310,
+                "2": 250
+              },
+              "comovement": {},
+              "timers": {},
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      },
+      {
+        "track_id": 4,
+        "obj_name": "worker_4",
+        "current_attribute": {
+          "class_name": "person",
+          "speed": 0.0,
+          "direction": 0,
+          "state": "stationary",
+          "action": "standing",
+          "color": "green",
+          "ppe_status": {
+            "helmet": true,
+            "vest": true
+          },
+          "nearby_objects": {
+            "1": 70,
+            "2": 190,
+            "3": 240
+          },
+          "comovement": {},
+          "timers": {},
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 6,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                150,
+                250,
+                210,
+                430
+              ],
+              "score": 0.98,
+              "class_name": "person"
+            },
+            "pose": {
+              "keypoints": [
+                [
+                  160,
+                  260,
+                  0.93
+                ],
+                [
+                  165,
+                  280,
+                  0.93
+                ],
+                [
+                  168,
+                  305,
+                  0.93
+                ],
+                [
+                  150,
+                  275,
+                  0.93
+                ],
+                [
+                  180,
+                  275,
+                  0.93
+                ]
+              ],
+              "score": 0.93
+            },
+            "segmentation": {
+              "points": [
+                150,
+                250,
+                180,
+                290
+              ],
+              "score": 0.85
+            },
+            "attribute": {
+              "class_name": "person",
+              "speed": 0.0,
+              "direction": 0,
+              "state": "stationary",
+              "action": "standing",
+              "color": "green",
+              "ppe_status": {
+                "helmet": true,
+                "vest": true
+              },
+              "nearby_objects": {
+                "1": 70,
+                "2": 190,
+                "3": 240
+              },
+              "comovement": {},
+              "timers": {},
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      }
+    ],
+    "global_vars": {
+      "zone_temperature": 28.93,
+      "alert_threshold": 0.8
+    },
+    "events": [
+      {
+        "name": "crossing_line",
+        "frame_id": 6,
+        "timestamp": 1696500000,
+        "data": {
+          "track_id": 3,
+          "line_id": "line_A"
+        }
+      }
+    ]
+  },
+  {
+    "frame_id": 7,
+    "timestamp": 1696500000,
+    "tracked_objects": [
+      {
+        "track_id": 1,
+        "obj_name": "worker_1",
+        "current_attribute": {
+          "class_name": "person",
+          "speed": 5.0,
+          "direction": 0,
+          "state": "moving",
+          "action": "walking",
+          "color": "blue",
+          "ppe_status": {
+            "helmet": true,
+            "vest": true
+          },
+          "nearby_objects": {
+            "2": 175
+          },
+          "comovement": {},
+          "timers": {},
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 7,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                135,
+                200,
+                195,
+                380
+              ],
+              "score": 0.97,
+              "class_name": "person"
+            },
+            "pose": {
+              "keypoints": [
+                [
+                  145,
+                  210,
+                  0.86
+                ],
+                [
+                  150,
+                  230,
+                  0.86
+                ],
+                [
+                  153,
+                  255,
+                  0.86
+                ],
+                [
+                  135,
+                  225,
+                  0.86
+                ],
+                [
+                  165,
+                  225,
+                  0.86
+                ]
+              ],
+              "score": 0.86
+            },
+            "segmentation": {
+              "points": [
+                135,
+                200,
+                165,
+                240
+              ],
+              "score": 0.84
+            },
+            "attribute": {
+              "class_name": "person",
+              "speed": 5.0,
+              "direction": 0,
+              "state": "moving",
+              "action": "walking",
+              "color": "blue",
+              "ppe_status": {
+                "helmet": true,
+                "vest": true
+              },
+              "nearby_objects": {
+                "2": 175
+              },
+              "comovement": {},
+              "timers": {},
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      },
+      {
+        "track_id": 2,
+        "obj_name": "worker_2",
+        "current_attribute": {
+          "class_name": "person",
+          "speed": 0.0,
+          "direction": 0,
+          "state": "stationary",
+          "action": "standing",
+          "color": "orange",
+          "ppe_status": {
+            "helmet": true,
+            "vest": true
+          },
+          "nearby_objects": {
+            "1": 175,
+            "3": 210,
+            "4": 190
+          },
+          "comovement": {},
+          "timers": {
+            "loiter": 1.0
+          },
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 7,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                300,
+                210,
+                360,
+                390
+              ],
+              "score": 0.94,
+              "class_name": "person"
+            },
+            "pose": {
+              "keypoints": [
+                [
+                  310,
+                  220,
+                  0.95
+                ],
+                [
+                  315,
+                  240,
+                  0.95
+                ],
+                [
+                  318,
+                  265,
+                  0.95
+                ],
+                [
+                  300,
+                  235,
+                  0.95
+                ],
+                [
+                  330,
+                  235,
+                  0.95
+                ]
+              ],
+              "score": 0.95
+            },
+            "segmentation": {
+              "points": [
+                300,
+                210,
+                330,
+                250
+              ],
+              "score": 0.92
+            },
+            "attribute": {
+              "class_name": "person",
+              "speed": 0.0,
+              "direction": 0,
+              "state": "stationary",
+              "action": "standing",
+              "color": "orange",
+              "ppe_status": {
+                "helmet": true,
+                "vest": true
+              },
+              "nearby_objects": {
+                "1": 175,
+                "3": 210,
+                "4": 190
+              },
+              "comovement": {},
+              "timers": {
+                "loiter": 1.0
+              },
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      },
+      {
+        "track_id": 3,
+        "obj_name": "obj_3",
+        "current_attribute": {
+          "class_name": "vehicle",
+          "speed": 40.0,
+          "direction": 0,
+          "state": "moving",
+          "action": "walking",
+          "color": "gray",
+          "ppe_status": {},
+          "nearby_objects": {
+            "2": 210
+          },
+          "comovement": {},
+          "timers": {},
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 7,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                280,
+                400,
+                400,
+                460
+              ],
+              "score": 0.86,
+              "class_name": "vehicle"
+            },
+            "pose": null,
+            "segmentation": {
+              "points": [
+                280,
+                400,
+                310,
+                440
+              ],
+              "score": 0.94
+            },
+            "attribute": {
+              "class_name": "vehicle",
+              "speed": 40.0,
+              "direction": 0,
+              "state": "moving",
+              "action": "walking",
+              "color": "gray",
+              "ppe_status": {},
+              "nearby_objects": {
+                "2": 210
+              },
+              "comovement": {},
+              "timers": {},
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      },
+      {
+        "track_id": 4,
+        "obj_name": "worker_4",
+        "current_attribute": {
+          "class_name": "person",
+          "speed": 0.0,
+          "direction": 0,
+          "state": "stationary",
+          "action": "standing",
+          "color": "green",
+          "ppe_status": {
+            "helmet": true,
+            "vest": true
+          },
+          "nearby_objects": {
+            "1": 65,
+            "3": 280
+          },
+          "comovement": {},
+          "timers": {},
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 7,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                150,
+                250,
+                210,
+                430
+              ],
+              "score": 0.96,
+              "class_name": "person"
+            },
+            "pose": {
+              "keypoints": [
+                [
+                  160,
+                  260,
+                  0.8
+                ],
+                [
+                  165,
+                  280,
+                  0.8
+                ],
+                [
+                  168,
+                  305,
+                  0.8
+                ],
+                [
+                  150,
+                  275,
+                  0.8
+                ],
+                [
+                  180,
+                  275,
+                  0.8
+                ]
+              ],
+              "score": 0.8
+            },
+            "segmentation": {
+              "points": [
+                150,
+                250,
+                180,
+                290
+              ],
+              "score": 0.91
+            },
+            "attribute": {
+              "class_name": "person",
+              "speed": 0.0,
+              "direction": 0,
+              "state": "stationary",
+              "action": "raise_hand",
+              "color": "green",
+              "ppe_status": {
+                "helmet": true,
+                "vest": true
+              },
+              "nearby_objects": {
+                "1": 65,
+                "3": 280
+              },
+              "comovement": {},
+              "timers": {
+                "raise_hand_duration": 2.1
+              },
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      }
+    ],
+    "global_vars": {
+      "zone_temperature": 29.1,
+      "alert_threshold": 0.8
+    },
+    "events": []
+  },
+  {
+    "frame_id": 8,
+    "timestamp": 1696500000,
+    "tracked_objects": [
+      {
+        "track_id": 1,
+        "obj_name": "worker_1",
+        "current_attribute": {
+          "class_name": "person",
+          "speed": 5.0,
+          "direction": 0,
+          "state": "moving",
+          "action": "walking",
+          "color": "blue",
+          "ppe_status": {
+            "helmet": true,
+            "vest": true
+          },
+          "nearby_objects": {
+            "2": 170,
+            "4": 60
+          },
+          "comovement": {},
+          "timers": {},
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 8,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                140,
+                200,
+                200,
+                380
+              ],
+              "score": 0.92,
+              "class_name": "person"
+            },
+            "pose": {
+              "keypoints": [
+                [
+                  150,
+                  210,
+                  0.93
+                ],
+                [
+                  155,
+                  230,
+                  0.93
+                ],
+                [
+                  158,
+                  255,
+                  0.93
+                ],
+                [
+                  140,
+                  225,
+                  0.93
+                ],
+                [
+                  170,
+                  225,
+                  0.93
+                ]
+              ],
+              "score": 0.93
+            },
+            "segmentation": {
+              "points": [
+                140,
+                200,
+                170,
+                240
+              ],
+              "score": 0.75
+            },
+            "attribute": {
+              "class_name": "person",
+              "speed": 5.0,
+              "direction": 0,
+              "state": "moving",
+              "action": "walking",
+              "color": "blue",
+              "ppe_status": {
+                "helmet": true,
+                "vest": true
+              },
+              "nearby_objects": {
+                "2": 170,
+                "4": 60
+              },
+              "comovement": {},
+              "timers": {},
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      },
+      {
+        "track_id": 2,
+        "obj_name": "worker_2",
+        "current_attribute": {
+          "class_name": "person",
+          "speed": 0.0,
+          "direction": 0,
+          "state": "stationary",
+          "action": "standing",
+          "color": "orange",
+          "ppe_status": {
+            "helmet": true,
+            "vest": true
+          },
+          "nearby_objects": {
+            "1": 170,
+            "3": 210
+          },
+          "comovement": {},
+          "timers": {
+            "loiter": 1.5
+          },
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 8,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                300,
+                210,
+                360,
+                390
+              ],
+              "score": 0.89,
+              "class_name": "person"
+            },
+            "pose": {
+              "keypoints": [
+                [
+                  310,
+                  220,
+                  0.93
+                ],
+                [
+                  315,
+                  240,
+                  0.93
+                ],
+                [
+                  318,
+                  265,
+                  0.93
+                ],
+                [
+                  300,
+                  235,
+                  0.93
+                ],
+                [
+                  330,
+                  235,
+                  0.93
+                ]
+              ],
+              "score": 0.93
+            },
+            "segmentation": {
+              "points": [
+                300,
+                210,
+                330,
+                250
+              ],
+              "score": 0.79
+            },
+            "attribute": {
+              "class_name": "person",
+              "speed": 0.0,
+              "direction": 0,
+              "state": "stationary",
+              "action": "standing",
+              "color": "orange",
+              "ppe_status": {
+                "helmet": true,
+                "vest": true
+              },
+              "nearby_objects": {
+                "1": 170,
+                "3": 210
+              },
+              "comovement": {},
+              "timers": {
+                "loiter": 1.5
+              },
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      },
+      {
+        "track_id": 3,
+        "obj_name": "obj_3",
+        "current_attribute": {
+          "class_name": "vehicle",
+          "speed": 40.0,
+          "direction": 0,
+          "state": "moving",
+          "action": "walking",
+          "color": "gray",
+          "ppe_status": {},
+          "nearby_objects": {
+            "2": 210,
+            "4": 320
+          },
+          "comovement": {},
+          "timers": {},
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 8,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                320,
+                400,
+                440,
+                460
+              ],
+              "score": 0.93,
+              "class_name": "vehicle"
+            },
+            "pose": null,
+            "segmentation": {
+              "points": [
+                320,
+                400,
+                350,
+                440
+              ],
+              "score": 0.97
+            },
+            "attribute": {
+              "class_name": "vehicle",
+              "speed": 40.0,
+              "direction": 0,
+              "state": "moving",
+              "action": "walking",
+              "color": "gray",
+              "ppe_status": {},
+              "nearby_objects": {
+                "2": 210,
+                "4": 320
+              },
+              "comovement": {},
+              "timers": {},
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      },
+      {
+        "track_id": 4,
+        "obj_name": "worker_4",
+        "current_attribute": {
+          "class_name": "person",
+          "speed": 0.0,
+          "direction": 0,
+          "state": "stationary",
+          "action": "standing",
+          "color": "green",
+          "ppe_status": {
+            "helmet": true,
+            "vest": true
+          },
+          "nearby_objects": {
+            "1": 60,
+            "3": 320
+          },
+          "comovement": {},
+          "timers": {},
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 8,
+            "timestamp": 1696500000,
+            "detection": null,
+            "pose": null,
+            "segmentation": null,
+            "attribute": {
+              "class_name": "person",
+              "speed": 0.0,
+              "direction": 0,
+              "state": "stationary",
+              "action": "standing",
+              "color": "green",
+              "ppe_status": {
+                "helmet": true,
+                "vest": true
+              },
+              "nearby_objects": {
+                "1": 60,
+                "3": 320
+              },
+              "comovement": {},
+              "timers": {},
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      }
+    ],
+    "global_vars": {
+      "zone_temperature": 27.2,
+      "alert_threshold": 0.8
+    },
+    "events": []
+  },
+  {
+    "frame_id": 9,
+    "timestamp": 1696500000,
+    "tracked_objects": [
+      {
+        "track_id": 1,
+        "obj_name": "worker_1",
+        "current_attribute": {
+          "class_name": "person",
+          "speed": 5.0,
+          "direction": 0,
+          "state": "moving",
+          "action": "walking",
+          "color": "blue",
+          "ppe_status": {
+            "helmet": true,
+            "vest": true
+          },
+          "nearby_objects": {
+            "2": 165,
+            "3": 415
+          },
+          "comovement": {},
+          "timers": {},
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 9,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                145,
+                200,
+                205,
+                380
+              ],
+              "score": 0.98,
+              "class_name": "person"
+            },
+            "pose": {
+              "keypoints": [
+                [
+                  155,
+                  210,
+                  0.78
+                ],
+                [
+                  160,
+                  230,
+                  0.78
+                ],
+                [
+                  163,
+                  255,
+                  0.78
+                ],
+                [
+                  145,
+                  225,
+                  0.78
+                ],
+                [
+                  175,
+                  225,
+                  0.78
+                ]
+              ],
+              "score": 0.78
+            },
+            "segmentation": {
+              "points": [
+                145,
+                200,
+                175,
+                240
+              ],
+              "score": 0.97
+            },
+            "attribute": {
+              "class_name": "person",
+              "speed": 5.0,
+              "direction": 0,
+              "state": "moving",
+              "action": "walking",
+              "color": "blue",
+              "ppe_status": {
+                "helmet": true,
+                "vest": true
+              },
+              "nearby_objects": {
+                "2": 165,
+                "3": 415
+              },
+              "comovement": {},
+              "timers": {},
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      },
+      {
+        "track_id": 2,
+        "obj_name": "worker_2",
+        "current_attribute": {
+          "class_name": "person",
+          "speed": 0.0,
+          "direction": 0,
+          "state": "stationary",
+          "action": "standing",
+          "color": "orange",
+          "ppe_status": {
+            "helmet": true,
+            "vest": true
+          },
+          "nearby_objects": {
+            "1": 165,
+            "3": 250
+          },
+          "comovement": {},
+          "timers": {
+            "loiter": 2.0
+          },
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 9,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                300,
+                210,
+                360,
+                390
+              ],
+              "score": 0.92,
+              "class_name": "person"
+            },
+            "pose": {
+              "keypoints": [
+                [
+                  310,
+                  220,
+                  0.71
+                ],
+                [
+                  315,
+                  240,
+                  0.71
+                ],
+                [
+                  318,
+                  265,
+                  0.71
+                ],
+                [
+                  300,
+                  235,
+                  0.71
+                ],
+                [
+                  330,
+                  235,
+                  0.71
+                ]
+              ],
+              "score": 0.71
+            },
+            "segmentation": {
+              "points": [
+                300,
+                210,
+                330,
+                250
+              ],
+              "score": 0.98
+            },
+            "attribute": {
+              "class_name": "person",
+              "speed": 0.0,
+              "direction": 0,
+              "state": "stationary",
+              "action": "standing",
+              "color": "orange",
+              "ppe_status": {
+                "helmet": true,
+                "vest": true
+              },
+              "nearby_objects": {
+                "1": 165,
+                "3": 250
+              },
+              "comovement": {},
+              "timers": {
+                "loiter": 2.0
+              },
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      },
+      {
+        "track_id": 3,
+        "obj_name": "obj_3",
+        "current_attribute": {
+          "class_name": "vehicle",
+          "speed": 40.0,
+          "direction": 0,
+          "state": "moving",
+          "action": "walking",
+          "color": "gray",
+          "ppe_status": {},
+          "nearby_objects": {
+            "1": 415
+          },
+          "comovement": {},
+          "timers": {},
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 9,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                360,
+                400,
+                480,
+                460
+              ],
+              "score": 0.97,
+              "class_name": "vehicle"
+            },
+            "pose": null,
+            "segmentation": {
+              "points": [
+                360,
+                400,
+                390,
+                440
+              ],
+              "score": 0.83
+            },
+            "attribute": {
+              "class_name": "vehicle",
+              "speed": 40.0,
+              "direction": 0,
+              "state": "moving",
+              "action": "walking",
+              "color": "gray",
+              "ppe_status": {},
+              "nearby_objects": {
+                "1": 415
+              },
+              "comovement": {},
+              "timers": {},
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      },
+      {
+        "track_id": 4,
+        "obj_name": "worker_4",
+        "current_attribute": {
+          "class_name": "person",
+          "speed": 0.0,
+          "direction": 0,
+          "state": "stationary",
+          "action": "standing",
+          "color": "green",
+          "ppe_status": {
+            "helmet": true,
+            "vest": true
+          },
+          "nearby_objects": {},
+          "comovement": {},
+          "timers": {},
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 9,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                150,
+                250,
+                210,
+                430
+              ],
+              "score": 0.93,
+              "class_name": "person"
+            },
+            "pose": {
+              "keypoints": [
+                [
+                  160,
+                  260,
+                  0.97
+                ],
+                [
+                  165,
+                  280,
+                  0.97
+                ],
+                [
+                  168,
+                  305,
+                  0.97
+                ],
+                [
+                  150,
+                  275,
+                  0.97
+                ],
+                [
+                  180,
+                  275,
+                  0.97
+                ]
+              ],
+              "score": 0.97
+            },
+            "segmentation": {
+              "points": [
+                150,
+                250,
+                180,
+                290
+              ],
+              "score": 0.79
+            },
+            "attribute": {
+              "class_name": "person",
+              "speed": 0.0,
+              "direction": 0,
+              "state": "falling",
+              "action": "falling",
+              "color": "green",
+              "ppe_status": {
+                "helmet": true,
+                "vest": true
+              },
+              "nearby_objects": {},
+              "comovement": {},
+              "timers": {},
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      }
+    ],
+    "global_vars": {
+      "zone_temperature": 26.93,
+      "alert_threshold": 0.8
+    },
+    "events": [
+      {
+        "name": "fall_detected",
+        "frame_id": 9,
+        "timestamp": 1696500000,
+        "data": {
+          "track_id": 4
+        }
+      }
+    ]
+  },
+  {
+    "frame_id": 10,
+    "timestamp": 1696500000,
+    "tracked_objects": [
+      {
+        "track_id": 1,
+        "obj_name": "worker_1",
+        "current_attribute": {
+          "class_name": "person",
+          "speed": 5.0,
+          "direction": 0,
+          "state": "moving",
+          "action": "walking",
+          "color": "blue",
+          "ppe_status": {
+            "helmet": true,
+            "vest": true
+          },
+          "nearby_objects": {
+            "3": 450,
+            "4": 50
+          },
+          "comovement": {},
+          "timers": {},
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 10,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                150,
+                200,
+                210,
+                380
+              ],
+              "score": 0.91,
+              "class_name": "person"
+            },
+            "pose": {
+              "keypoints": [
+                [
+                  160,
+                  210,
+                  0.82
+                ],
+                [
+                  165,
+                  230,
+                  0.82
+                ],
+                [
+                  168,
+                  255,
+                  0.82
+                ],
+                [
+                  150,
+                  225,
+                  0.82
+                ],
+                [
+                  180,
+                  225,
+                  0.82
+                ]
+              ],
+              "score": 0.82
+            },
+            "segmentation": {
+              "points": [
+                150,
+                200,
+                180,
+                240
+              ],
+              "score": 0.87
+            },
+            "attribute": {
+              "class_name": "person",
+              "speed": 5.0,
+              "direction": 0,
+              "state": "moving",
+              "action": "walking",
+              "color": "blue",
+              "ppe_status": {
+                "helmet": true,
+                "vest": true
+              },
+              "nearby_objects": {
+                "3": 450,
+                "4": 50
+              },
+              "comovement": {},
+              "timers": {},
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      },
+      {
+        "track_id": 2,
+        "obj_name": "worker_2",
+        "current_attribute": {
+          "class_name": "person",
+          "speed": 0.0,
+          "direction": 0,
+          "state": "stationary",
+          "action": "standing",
+          "color": "orange",
+          "ppe_status": {
+            "helmet": true,
+            "vest": true
+          },
+          "nearby_objects": {
+            "1": 160,
+            "3": 290,
+            "4": 190
+          },
+          "comovement": {},
+          "timers": {
+            "loiter": 2.5
+          },
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 10,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                300,
+                210,
+                360,
+                390
+              ],
+              "score": 0.96,
+              "class_name": "person"
+            },
+            "pose": {
+              "keypoints": [
+                [
+                  310,
+                  220,
+                  0.96
+                ],
+                [
+                  315,
+                  240,
+                  0.96
+                ],
+                [
+                  318,
+                  265,
+                  0.96
+                ],
+                [
+                  300,
+                  235,
+                  0.96
+                ],
+                [
+                  330,
+                  235,
+                  0.96
+                ]
+              ],
+              "score": 0.96
+            },
+            "segmentation": {
+              "points": [
+                300,
+                210,
+                330,
+                250
+              ],
+              "score": 0.94
+            },
+            "attribute": {
+              "class_name": "person",
+              "speed": 0.0,
+              "direction": 0,
+              "state": "stationary",
+              "action": "standing",
+              "color": "orange",
+              "ppe_status": {
+                "helmet": true,
+                "vest": true
+              },
+              "nearby_objects": {
+                "1": 160,
+                "3": 290,
+                "4": 190
+              },
+              "comovement": {},
+              "timers": {
+                "loiter": 2.5
+              },
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      },
+      {
+        "track_id": 3,
+        "obj_name": "obj_3",
+        "current_attribute": {
+          "class_name": "vehicle",
+          "speed": 40.0,
+          "direction": 0,
+          "state": "moving",
+          "action": "walking",
+          "color": "gray",
+          "ppe_status": {},
+          "nearby_objects": {
+            "1": 450,
+            "4": 400
+          },
+          "comovement": {},
+          "timers": {},
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 10,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                400,
+                400,
+                520,
+                460
+              ],
+              "score": 0.86,
+              "class_name": "vehicle"
+            },
+            "pose": null,
+            "segmentation": {
+              "points": [
+                400,
+                400,
+                430,
+                440
+              ],
+              "score": 0.82
+            },
+            "attribute": {
+              "class_name": "vehicle",
+              "speed": 40.0,
+              "direction": 0,
+              "state": "moving",
+              "action": "walking",
+              "color": "gray",
+              "ppe_status": {},
+              "nearby_objects": {
+                "1": 450,
+                "4": 400
+              },
+              "comovement": {},
+              "timers": {},
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      },
+      {
+        "track_id": 4,
+        "obj_name": "worker_4",
+        "current_attribute": {
+          "class_name": "person",
+          "speed": 0.0,
+          "direction": 0,
+          "state": "stationary",
+          "action": "standing",
+          "color": "green",
+          "ppe_status": {
+            "helmet": true,
+            "vest": true
+          },
+          "nearby_objects": {
+            "1": 50,
+            "2": 190,
+            "3": 400
+          },
+          "comovement": {},
+          "timers": {},
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 10,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                150,
+                250,
+                210,
+                430
+              ],
+              "score": 0.86,
+              "class_name": "person"
+            },
+            "pose": {
+              "keypoints": [
+                [
+                  160,
+                  260,
+                  0.96
+                ],
+                [
+                  165,
+                  280,
+                  0.96
+                ],
+                [
+                  168,
+                  305,
+                  0.96
+                ],
+                [
+                  150,
+                  275,
+                  0.96
+                ],
+                [
+                  180,
+                  275,
+                  0.96
+                ]
+              ],
+              "score": 0.96
+            },
+            "segmentation": {
+              "points": [
+                150,
+                250,
+                180,
+                290
+              ],
+              "score": 0.81
+            },
+            "attribute": {
+              "class_name": "person",
+              "speed": 0.0,
+              "direction": 0,
+              "state": "stationary",
+              "action": "standing",
+              "color": "green",
+              "ppe_status": {
+                "helmet": true,
+                "vest": true
+              },
+              "nearby_objects": {
+                "1": 50,
+                "2": 190,
+                "3": 400
+              },
+              "comovement": {},
+              "timers": {},
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      }
+    ],
+    "global_vars": {
+      "zone_temperature": 28.96,
+      "alert_threshold": 0.8
+    },
+    "events": []
+  },
+  {
+    "frame_id": 11,
+    "timestamp": 1696500000,
+    "tracked_objects": [
+      {
+        "track_id": 1,
+        "obj_name": "worker_1",
+        "current_attribute": {
+          "class_name": "person",
+          "speed": 5.0,
+          "direction": 0,
+          "state": "moving",
+          "action": "walking",
+          "color": "blue",
+          "ppe_status": {
+            "helmet": true,
+            "vest": true
+          },
+          "nearby_objects": {
+            "2": 155,
+            "3": 485
+          },
+          "comovement": {},
+          "timers": {},
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 11,
+            "timestamp": 1696500000,
+            "detection": null,
+            "pose": null,
+            "segmentation": null,
+            "attribute": {
+              "class_name": "person",
+              "speed": 5.0,
+              "direction": 0,
+              "state": "moving",
+              "action": "walking",
+              "color": "blue",
+              "ppe_status": {
+                "helmet": true,
+                "vest": true
+              },
+              "nearby_objects": {
+                "2": 155,
+                "3": 485
+              },
+              "comovement": {},
+              "timers": {},
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      },
+      {
+        "track_id": 2,
+        "obj_name": "worker_2",
+        "current_attribute": {
+          "class_name": "person",
+          "speed": 0.0,
+          "direction": 0,
+          "state": "stationary",
+          "action": "standing",
+          "color": "orange",
+          "ppe_status": {
+            "helmet": true,
+            "vest": true
+          },
+          "nearby_objects": {
+            "1": 155,
+            "3": 330,
+            "4": 190
+          },
+          "comovement": {},
+          "timers": {
+            "loiter": 3.0
+          },
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 11,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                300,
+                210,
+                360,
+                390
+              ],
+              "score": 0.88,
+              "class_name": "person"
+            },
+            "pose": {
+              "keypoints": [
+                [
+                  310,
+                  220,
+                  0.77
+                ],
+                [
+                  315,
+                  240,
+                  0.77
+                ],
+                [
+                  318,
+                  265,
+                  0.77
+                ],
+                [
+                  300,
+                  235,
+                  0.77
+                ],
+                [
+                  330,
+                  235,
+                  0.77
+                ]
+              ],
+              "score": 0.77
+            },
+            "segmentation": {
+              "points": [
+                300,
+                210,
+                330,
+                250
+              ],
+              "score": 0.71
+            },
+            "attribute": {
+              "class_name": "person",
+              "speed": 0.0,
+              "direction": 0,
+              "state": "stationary",
+              "action": "standing",
+              "color": "orange",
+              "ppe_status": {
+                "helmet": true,
+                "vest": true
+              },
+              "nearby_objects": {
+                "1": 155,
+                "3": 330,
+                "4": 190
+              },
+              "comovement": {},
+              "timers": {
+                "loiter": 3.0
+              },
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      },
+      {
+        "track_id": 3,
+        "obj_name": "obj_3",
+        "current_attribute": {
+          "class_name": "vehicle",
+          "speed": 40.0,
+          "direction": 0,
+          "state": "moving",
+          "action": "walking",
+          "color": "gray",
+          "ppe_status": {},
+          "nearby_objects": {
+            "2": 330
+          },
+          "comovement": {},
+          "timers": {},
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 11,
+            "timestamp": 1696500000,
+            "detection": null,
+            "pose": null,
+            "segmentation": null,
+            "attribute": {
+              "class_name": "vehicle",
+              "speed": 40.0,
+              "direction": 0,
+              "state": "moving",
+              "action": "walking",
+              "color": "gray",
+              "ppe_status": {},
+              "nearby_objects": {
+                "2": 330
+              },
+              "comovement": {},
+              "timers": {},
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      },
+      {
+        "track_id": 4,
+        "obj_name": "worker_4",
+        "current_attribute": {
+          "class_name": "person",
+          "speed": 0.0,
+          "direction": 0,
+          "state": "stationary",
+          "action": "standing",
+          "color": "green",
+          "ppe_status": {
+            "helmet": true,
+            "vest": true
+          },
+          "nearby_objects": {
+            "2": 190,
+            "3": 440
+          },
+          "comovement": {},
+          "timers": {},
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 11,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                150,
+                250,
+                210,
+                430
+              ],
+              "score": 0.95,
+              "class_name": "person"
+            },
+            "pose": {
+              "keypoints": [
+                [
+                  160,
+                  260,
+                  0.95
+                ],
+                [
+                  165,
+                  280,
+                  0.95
+                ],
+                [
+                  168,
+                  305,
+                  0.95
+                ],
+                [
+                  150,
+                  275,
+                  0.95
+                ],
+                [
+                  180,
+                  275,
+                  0.95
+                ]
+              ],
+              "score": 0.95
+            },
+            "segmentation": {
+              "points": [
+                150,
+                250,
+                180,
+                290
+              ],
+              "score": 0.82
+            },
+            "attribute": {
+              "class_name": "person",
+              "speed": 0.0,
+              "direction": 0,
+              "state": "stationary",
+              "action": "standing",
+              "color": "green",
+              "ppe_status": {
+                "helmet": true,
+                "vest": true
+              },
+              "nearby_objects": {
+                "2": 190,
+                "3": 440
+              },
+              "comovement": {},
+              "timers": {},
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      }
+    ],
+    "global_vars": {
+      "zone_temperature": 26.46,
+      "alert_threshold": 0.8
+    },
+    "events": [
+      {
+        "name": "track_lost",
+        "frame_id": 11,
+        "timestamp": 1696500000,
+        "data": {
+          "track_id": 1
+        }
+      }
+    ]
+  },
+  {
+    "frame_id": 12,
+    "timestamp": 1696500000,
+    "tracked_objects": [
+      {
+        "track_id": 1,
+        "obj_name": "worker_1",
+        "current_attribute": {
+          "class_name": "person",
+          "speed": 5.0,
+          "direction": 0,
+          "state": "moving",
+          "action": "walking",
+          "color": "blue",
+          "ppe_status": {
+            "helmet": true,
+            "vest": true
+          },
+          "nearby_objects": {
+            "2": 150,
+            "3": 520
+          },
+          "comovement": {},
+          "timers": {},
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 12,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                160,
+                200,
+                220,
+                380
+              ],
+              "score": 0.88,
+              "class_name": "person"
+            },
+            "pose": {
+              "keypoints": [
+                [
+                  170,
+                  210,
+                  0.71
+                ],
+                [
+                  175,
+                  230,
+                  0.71
+                ],
+                [
+                  178,
+                  255,
+                  0.71
+                ],
+                [
+                  160,
+                  225,
+                  0.71
+                ],
+                [
+                  190,
+                  225,
+                  0.71
+                ]
+              ],
+              "score": 0.71
+            },
+            "segmentation": {
+              "points": [
+                160,
+                200,
+                190,
+                240
+              ],
+              "score": 0.8
+            },
+            "attribute": {
+              "class_name": "person",
+              "speed": 5.0,
+              "direction": 0,
+              "state": "moving",
+              "action": "walking",
+              "color": "blue",
+              "ppe_status": {
+                "helmet": true,
+                "vest": true
+              },
+              "nearby_objects": {
+                "2": 150,
+                "3": 520
+              },
+              "comovement": {},
+              "timers": {},
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      },
+      {
+        "track_id": 2,
+        "obj_name": "worker_2",
+        "current_attribute": {
+          "class_name": "person",
+          "speed": 0.0,
+          "direction": 0,
+          "state": "stationary",
+          "action": "standing",
+          "color": "orange",
+          "ppe_status": {
+            "helmet": true,
+            "vest": true
+          },
+          "nearby_objects": {
+            "1": 150,
+            "3": 370,
+            "4": 190
+          },
+          "comovement": {},
+          "timers": {
+            "loiter": 3.5
+          },
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 12,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                300,
+                210,
+                360,
+                390
+              ],
+              "score": 0.91,
+              "class_name": "person"
+            },
+            "pose": {
+              "keypoints": [
+                [
+                  310,
+                  220,
+                  0.86
+                ],
+                [
+                  315,
+                  240,
+                  0.86
+                ],
+                [
+                  318,
+                  265,
+                  0.86
+                ],
+                [
+                  300,
+                  235,
+                  0.86
+                ],
+                [
+                  330,
+                  235,
+                  0.86
+                ]
+              ],
+              "score": 0.86
+            },
+            "segmentation": {
+              "points": [
+                300,
+                210,
+                330,
+                250
+              ],
+              "score": 0.81
+            },
+            "attribute": {
+              "class_name": "person",
+              "speed": 0.0,
+              "direction": 0,
+              "state": "stationary",
+              "action": "standing",
+              "color": "orange",
+              "ppe_status": {
+                "helmet": true,
+                "vest": true
+              },
+              "nearby_objects": {
+                "1": 150,
+                "3": 370,
+                "4": 190
+              },
+              "comovement": {},
+              "timers": {
+                "loiter": 3.5
+              },
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      },
+      {
+        "track_id": 3,
+        "obj_name": "obj_3",
+        "current_attribute": {
+          "class_name": "vehicle",
+          "speed": 40.0,
+          "direction": 0,
+          "state": "moving",
+          "action": "walking",
+          "color": "gray",
+          "ppe_status": {},
+          "nearby_objects": {
+            "2": 370,
+            "4": 480
+          },
+          "comovement": {},
+          "timers": {},
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 12,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                480,
+                400,
+                600,
+                460
+              ],
+              "score": 0.95,
+              "class_name": "vehicle"
+            },
+            "pose": null,
+            "segmentation": {
+              "points": [
+                480,
+                400,
+                510,
+                440
+              ],
+              "score": 0.96
+            },
+            "attribute": {
+              "class_name": "vehicle",
+              "speed": 40.0,
+              "direction": 0,
+              "state": "moving",
+              "action": "walking",
+              "color": "gray",
+              "ppe_status": {},
+              "nearby_objects": {
+                "2": 370,
+                "4": 480
+              },
+              "comovement": {},
+              "timers": {},
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      },
+      {
+        "track_id": 4,
+        "obj_name": "worker_4",
+        "current_attribute": {
+          "class_name": "person",
+          "speed": 0.0,
+          "direction": 0,
+          "state": "stationary",
+          "action": "standing",
+          "color": "green",
+          "ppe_status": {
+            "helmet": true,
+            "vest": true
+          },
+          "nearby_objects": {
+            "1": 60,
+            "2": 190
+          },
+          "comovement": {},
+          "timers": {},
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 12,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                150,
+                250,
+                210,
+                430
+              ],
+              "score": 0.85,
+              "class_name": "person"
+            },
+            "pose": {
+              "keypoints": [
+                [
+                  160,
+                  260,
+                  0.85
+                ],
+                [
+                  165,
+                  280,
+                  0.85
+                ],
+                [
+                  168,
+                  305,
+                  0.85
+                ],
+                [
+                  150,
+                  275,
+                  0.85
+                ],
+                [
+                  180,
+                  275,
+                  0.85
+                ]
+              ],
+              "score": 0.85
+            },
+            "segmentation": {
+              "points": [
+                150,
+                250,
+                180,
+                290
+              ],
+              "score": 0.78
+            },
+            "attribute": {
+              "class_name": "person",
+              "speed": 0.0,
+              "direction": 0,
+              "state": "stationary",
+              "action": "standing",
+              "color": "green",
+              "ppe_status": {
+                "helmet": true,
+                "vest": true
+              },
+              "nearby_objects": {
+                "1": 60,
+                "2": 190
+              },
+              "comovement": {},
+              "timers": {},
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      }
+    ],
+    "global_vars": {
+      "zone_temperature": 26.07,
+      "alert_threshold": 0.8
+    },
+    "events": []
+  },
+  {
+    "frame_id": 13,
+    "timestamp": 1696500000,
+    "tracked_objects": [
+      {
+        "track_id": 1,
+        "obj_name": "worker_1",
+        "current_attribute": {
+          "class_name": "person",
+          "speed": 5.0,
+          "direction": 0,
+          "state": "moving",
+          "action": "walking",
+          "color": "blue",
+          "ppe_status": {
+            "helmet": true,
+            "vest": true
+          },
+          "nearby_objects": {
+            "3": 555
+          },
+          "comovement": {},
+          "timers": {},
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 13,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                165,
+                200,
+                225,
+                380
+              ],
+              "score": 0.93,
+              "class_name": "person"
+            },
+            "pose": {
+              "keypoints": [
+                [
+                  175,
+                  210,
+                  0.79
+                ],
+                [
+                  180,
+                  230,
+                  0.79
+                ],
+                [
+                  183,
+                  255,
+                  0.79
+                ],
+                [
+                  165,
+                  225,
+                  0.79
+                ],
+                [
+                  195,
+                  225,
+                  0.79
+                ]
+              ],
+              "score": 0.79
+            },
+            "segmentation": {
+              "points": [
+                165,
+                200,
+                195,
+                240
+              ],
+              "score": 0.72
+            },
+            "attribute": {
+              "class_name": "person",
+              "speed": 5.0,
+              "direction": 0,
+              "state": "moving",
+              "action": "walking",
+              "color": "blue",
+              "ppe_status": {
+                "helmet": true,
+                "vest": true
+              },
+              "nearby_objects": {
+                "3": 555
+              },
+              "comovement": {},
+              "timers": {},
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      },
+      {
+        "track_id": 2,
+        "obj_name": "worker_2",
+        "current_attribute": {
+          "class_name": "person",
+          "speed": 0.0,
+          "direction": 0,
+          "state": "stationary",
+          "action": "standing",
+          "color": "orange",
+          "ppe_status": {
+            "helmet": true,
+            "vest": true
+          },
+          "nearby_objects": {
+            "4": 190
+          },
+          "comovement": {},
+          "timers": {
+            "loiter": 4.0
+          },
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 13,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                300,
+                210,
+                360,
+                390
+              ],
+              "score": 0.92,
+              "class_name": "person"
+            },
+            "pose": {
+              "keypoints": [
+                [
+                  310,
+                  220,
+                  0.94
+                ],
+                [
+                  315,
+                  240,
+                  0.94
+                ],
+                [
+                  318,
+                  265,
+                  0.94
+                ],
+                [
+                  300,
+                  235,
+                  0.94
+                ],
+                [
+                  330,
+                  235,
+                  0.94
+                ]
+              ],
+              "score": 0.94
+            },
+            "segmentation": {
+              "points": [
+                300,
+                210,
+                330,
+                250
+              ],
+              "score": 0.7
+            },
+            "attribute": {
+              "class_name": "person",
+              "speed": 0.0,
+              "direction": 0,
+              "state": "stationary",
+              "action": "standing",
+              "color": "orange",
+              "ppe_status": {
+                "helmet": true,
+                "vest": true
+              },
+              "nearby_objects": {
+                "4": 190
+              },
+              "comovement": {},
+              "timers": {
+                "loiter": 4.0
+              },
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      },
+      {
+        "track_id": 3,
+        "obj_name": "obj_3",
+        "current_attribute": {
+          "class_name": "vehicle",
+          "speed": 40.0,
+          "direction": 0,
+          "state": "moving",
+          "action": "walking",
+          "color": "gray",
+          "ppe_status": {},
+          "nearby_objects": {
+            "2": 410,
+            "4": 520
+          },
+          "comovement": {},
+          "timers": {},
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 13,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                520,
+                400,
+                640,
+                460
+              ],
+              "score": 0.91,
+              "class_name": "vehicle"
+            },
+            "pose": null,
+            "segmentation": {
+              "points": [
+                520,
+                400,
+                550,
+                440
+              ],
+              "score": 0.96
+            },
+            "attribute": {
+              "class_name": "vehicle",
+              "speed": 40.0,
+              "direction": 0,
+              "state": "moving",
+              "action": "walking",
+              "color": "gray",
+              "ppe_status": {},
+              "nearby_objects": {
+                "2": 410,
+                "4": 520
+              },
+              "comovement": {},
+              "timers": {},
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      },
+      {
+        "track_id": 4,
+        "obj_name": "worker_4",
+        "current_attribute": {
+          "class_name": "person",
+          "speed": 0.0,
+          "direction": 0,
+          "state": "stationary",
+          "action": "standing",
+          "color": "green",
+          "ppe_status": {
+            "helmet": true,
+            "vest": true
+          },
+          "nearby_objects": {
+            "2": 190,
+            "3": 520
+          },
+          "comovement": {},
+          "timers": {},
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 13,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                150,
+                250,
+                210,
+                430
+              ],
+              "score": 0.86,
+              "class_name": "person"
+            },
+            "pose": {
+              "keypoints": [
+                [
+                  160,
+                  260,
+                  0.89
+                ],
+                [
+                  165,
+                  280,
+                  0.89
+                ],
+                [
+                  168,
+                  305,
+                  0.89
+                ],
+                [
+                  150,
+                  275,
+                  0.89
+                ],
+                [
+                  180,
+                  275,
+                  0.89
+                ]
+              ],
+              "score": 0.89
+            },
+            "segmentation": {
+              "points": [
+                150,
+                250,
+                180,
+                290
+              ],
+              "score": 0.8
+            },
+            "attribute": {
+              "class_name": "person",
+              "speed": 0.0,
+              "direction": 0,
+              "state": "stationary",
+              "action": "standing",
+              "color": "green",
+              "ppe_status": {
+                "helmet": true,
+                "vest": true
+              },
+              "nearby_objects": {
+                "2": 190,
+                "3": 520
+              },
+              "comovement": {},
+              "timers": {},
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      }
+    ],
+    "global_vars": {
+      "zone_temperature": 29.78,
+      "alert_threshold": 0.8
+    },
+    "events": [
+      {
+        "name": "ppe_ok",
+        "frame_id": 13,
+        "timestamp": 1696500000,
+        "data": {
+          "track_id": 1
+        }
+      }
+    ]
+  },
+  {
+    "frame_id": 14,
+    "timestamp": 1696500000,
+    "tracked_objects": [
+      {
+        "track_id": 1,
+        "obj_name": "worker_1",
+        "current_attribute": {
+          "class_name": "person",
+          "speed": 5.0,
+          "direction": 0,
+          "state": "moving",
+          "action": "walking",
+          "color": "blue",
+          "ppe_status": {
+            "helmet": true,
+            "vest": true
+          },
+          "nearby_objects": {
+            "4": 70
+          },
+          "comovement": {},
+          "timers": {},
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 14,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                170,
+                200,
+                230,
+                380
+              ],
+              "score": 0.94,
+              "class_name": "person"
+            },
+            "pose": {
+              "keypoints": [
+                [
+                  180,
+                  210,
+                  0.73
+                ],
+                [
+                  185,
+                  230,
+                  0.73
+                ],
+                [
+                  188,
+                  255,
+                  0.73
+                ],
+                [
+                  170,
+                  225,
+                  0.73
+                ],
+                [
+                  200,
+                  225,
+                  0.73
+                ]
+              ],
+              "score": 0.73
+            },
+            "segmentation": {
+              "points": [
+                170,
+                200,
+                200,
+                240
+              ],
+              "score": 0.7
+            },
+            "attribute": {
+              "class_name": "person",
+              "speed": 5.0,
+              "direction": 0,
+              "state": "moving",
+              "action": "walking",
+              "color": "blue",
+              "ppe_status": {
+                "helmet": true,
+                "vest": true
+              },
+              "nearby_objects": {
+                "4": 70
+              },
+              "comovement": {},
+              "timers": {},
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      },
+      {
+        "track_id": 2,
+        "obj_name": "worker_2",
+        "current_attribute": {
+          "class_name": "person",
+          "speed": 0.0,
+          "direction": 0,
+          "state": "stationary",
+          "action": "standing",
+          "color": "orange",
+          "ppe_status": {
+            "helmet": true,
+            "vest": true
+          },
+          "nearby_objects": {
+            "1": 140,
+            "3": 450
+          },
+          "comovement": {},
+          "timers": {
+            "loiter": 4.5
+          },
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 14,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                300,
+                210,
+                360,
+                390
+              ],
+              "score": 0.86,
+              "class_name": "person"
+            },
+            "pose": {
+              "keypoints": [
+                [
+                  310,
+                  220,
+                  0.72
+                ],
+                [
+                  315,
+                  240,
+                  0.72
+                ],
+                [
+                  318,
+                  265,
+                  0.72
+                ],
+                [
+                  300,
+                  235,
+                  0.72
+                ],
+                [
+                  330,
+                  235,
+                  0.72
+                ]
+              ],
+              "score": 0.72
+            },
+            "segmentation": {
+              "points": [
+                300,
+                210,
+                330,
+                250
+              ],
+              "score": 0.96
+            },
+            "attribute": {
+              "class_name": "person",
+              "speed": 0.0,
+              "direction": 0,
+              "state": "stationary",
+              "action": "standing",
+              "color": "orange",
+              "ppe_status": {
+                "helmet": true,
+                "vest": true
+              },
+              "nearby_objects": {
+                "1": 140,
+                "3": 450
+              },
+              "comovement": {},
+              "timers": {
+                "loiter": 4.5
+              },
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      },
+      {
+        "track_id": 3,
+        "obj_name": "obj_3",
+        "current_attribute": {
+          "class_name": "vehicle",
+          "speed": 40.0,
+          "direction": 0,
+          "state": "moving",
+          "action": "walking",
+          "color": "gray",
+          "ppe_status": {},
+          "nearby_objects": {
+            "1": 590,
+            "2": 450
+          },
+          "comovement": {},
+          "timers": {},
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 14,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                560,
+                400,
+                680,
+                460
+              ],
+              "score": 0.93,
+              "class_name": "vehicle"
+            },
+            "pose": null,
+            "segmentation": {
+              "points": [
+                560,
+                400,
+                590,
+                440
+              ],
+              "score": 0.91
+            },
+            "attribute": {
+              "class_name": "vehicle",
+              "speed": 40.0,
+              "direction": 0,
+              "state": "moving",
+              "action": "walking",
+              "color": "gray",
+              "ppe_status": {},
+              "nearby_objects": {
+                "1": 590,
+                "2": 450
+              },
+              "comovement": {},
+              "timers": {},
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      },
+      {
+        "track_id": 4,
+        "obj_name": "worker_4",
+        "current_attribute": {
+          "class_name": "person",
+          "speed": 0.0,
+          "direction": 0,
+          "state": "stationary",
+          "action": "standing",
+          "color": "green",
+          "ppe_status": {
+            "helmet": true,
+            "vest": true
+          },
+          "nearby_objects": {
+            "3": 560
+          },
+          "comovement": {},
+          "timers": {},
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 14,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                150,
+                250,
+                210,
+                430
+              ],
+              "score": 0.99,
+              "class_name": "person"
+            },
+            "pose": {
+              "keypoints": [
+                [
+                  160,
+                  260,
+                  0.8
+                ],
+                [
+                  165,
+                  280,
+                  0.8
+                ],
+                [
+                  168,
+                  305,
+                  0.8
+                ],
+                [
+                  150,
+                  275,
+                  0.8
+                ],
+                [
+                  180,
+                  275,
+                  0.8
+                ]
+              ],
+              "score": 0.8
+            },
+            "segmentation": {
+              "points": [
+                150,
+                250,
+                180,
+                290
+              ],
+              "score": 0.88
+            },
+            "attribute": {
+              "class_name": "person",
+              "speed": 0.0,
+              "direction": 0,
+              "state": "stationary",
+              "action": "standing",
+              "color": "green",
+              "ppe_status": {
+                "helmet": true,
+                "vest": true
+              },
+              "nearby_objects": {
+                "3": 560
+              },
+              "comovement": {},
+              "timers": {},
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      }
+    ],
+    "global_vars": {
+      "zone_temperature": 29.23,
+      "alert_threshold": 0.8
+    },
+    "events": []
+  },
+  {
+    "frame_id": 15,
+    "timestamp": 1696500000,
+    "tracked_objects": [
+      {
+        "track_id": 1,
+        "obj_name": "worker_1",
+        "current_attribute": {
+          "class_name": "person",
+          "speed": 5.0,
+          "direction": 0,
+          "state": "moving",
+          "action": "walking",
+          "color": "blue",
+          "ppe_status": {
+            "helmet": true,
+            "vest": true
+          },
+          "nearby_objects": {
+            "4": 75
+          },
+          "comovement": {},
+          "timers": {},
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 15,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                175,
+                200,
+                235,
+                380
+              ],
+              "score": 0.85,
+              "class_name": "person"
+            },
+            "pose": {
+              "keypoints": [
+                [
+                  185,
+                  210,
+                  0.8
+                ],
+                [
+                  190,
+                  230,
+                  0.8
+                ],
+                [
+                  193,
+                  255,
+                  0.8
+                ],
+                [
+                  175,
+                  225,
+                  0.8
+                ],
+                [
+                  205,
+                  225,
+                  0.8
+                ]
+              ],
+              "score": 0.8
+            },
+            "segmentation": {
+              "points": [
+                175,
+                200,
+                205,
+                240
+              ],
+              "score": 0.91
+            },
+            "attribute": {
+              "class_name": "person",
+              "speed": 5.0,
+              "direction": 0,
+              "state": "moving",
+              "action": "walking",
+              "color": "blue",
+              "ppe_status": {
+                "helmet": true,
+                "vest": true
+              },
+              "nearby_objects": {
+                "4": 75
+              },
+              "comovement": {},
+              "timers": {},
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      },
+      {
+        "track_id": 2,
+        "obj_name": "worker_2",
+        "current_attribute": {
+          "class_name": "person",
+          "speed": 0.0,
+          "direction": 0,
+          "state": "stationary",
+          "action": "standing",
+          "color": "orange",
+          "ppe_status": {
+            "helmet": true,
+            "vest": true
+          },
+          "nearby_objects": {
+            "3": 490
+          },
+          "comovement": {},
+          "timers": {
+            "loiter": 5.0
+          },
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 15,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                300,
+                210,
+                360,
+                390
+              ],
+              "score": 0.91,
+              "class_name": "person"
+            },
+            "pose": {
+              "keypoints": [
+                [
+                  310,
+                  220,
+                  0.73
+                ],
+                [
+                  315,
+                  240,
+                  0.73
+                ],
+                [
+                  318,
+                  265,
+                  0.73
+                ],
+                [
+                  300,
+                  235,
+                  0.73
+                ],
+                [
+                  330,
+                  235,
+                  0.73
+                ]
+              ],
+              "score": 0.73
+            },
+            "segmentation": {
+              "points": [
+                300,
+                210,
+                330,
+                250
+              ],
+              "score": 0.87
+            },
+            "attribute": {
+              "class_name": "person",
+              "speed": 0.0,
+              "direction": 0,
+              "state": "stationary",
+              "action": "standing",
+              "color": "orange",
+              "ppe_status": {
+                "helmet": true,
+                "vest": true
+              },
+              "nearby_objects": {
+                "3": 490
+              },
+              "comovement": {},
+              "timers": {
+                "loiter": 5.0
+              },
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      },
+      {
+        "track_id": 3,
+        "obj_name": "obj_3",
+        "current_attribute": {
+          "class_name": "vehicle",
+          "speed": 40.0,
+          "direction": 0,
+          "state": "moving",
+          "action": "walking",
+          "color": "gray",
+          "ppe_status": {},
+          "nearby_objects": {
+            "2": 490
+          },
+          "comovement": {},
+          "timers": {},
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 15,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                600,
+                400,
+                720,
+                460
+              ],
+              "score": 0.88,
+              "class_name": "vehicle"
+            },
+            "pose": null,
+            "segmentation": {
+              "points": [
+                600,
+                400,
+                630,
+                440
+              ],
+              "score": 0.8
+            },
+            "attribute": {
+              "class_name": "vehicle",
+              "speed": 40.0,
+              "direction": 0,
+              "state": "moving",
+              "action": "walking",
+              "color": "gray",
+              "ppe_status": {},
+              "nearby_objects": {
+                "2": 490
+              },
+              "comovement": {},
+              "timers": {},
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      },
+      {
+        "track_id": 4,
+        "obj_name": "worker_4",
+        "current_attribute": {
+          "class_name": "person",
+          "speed": 0.0,
+          "direction": 0,
+          "state": "stationary",
+          "action": "standing",
+          "color": "green",
+          "ppe_status": {
+            "helmet": true,
+            "vest": true
+          },
+          "nearby_objects": {
+            "2": 190
+          },
+          "comovement": {},
+          "timers": {},
+          "group_id": null,
+          "altitude": null
+        },
+        "predictions": [
+          {
+            "frame_id": 15,
+            "timestamp": 1696500000,
+            "detection": {
+              "bbox": [
+                150,
+                250,
+                210,
+                430
+              ],
+              "score": 0.87,
+              "class_name": "person"
+            },
+            "pose": {
+              "keypoints": [
+                [
+                  160,
+                  260,
+                  0.71
+                ],
+                [
+                  165,
+                  280,
+                  0.71
+                ],
+                [
+                  168,
+                  305,
+                  0.71
+                ],
+                [
+                  150,
+                  275,
+                  0.71
+                ],
+                [
+                  180,
+                  275,
+                  0.71
+                ]
+              ],
+              "score": 0.71
+            },
+            "segmentation": {
+              "points": [
+                150,
+                250,
+                180,
+                290
+              ],
+              "score": 0.9
+            },
+            "attribute": {
+              "class_name": "person",
+              "speed": 0.0,
+              "direction": 0,
+              "state": "stationary",
+              "action": "standing",
+              "color": "green",
+              "ppe_status": {
+                "helmet": true,
+                "vest": true
+              },
+              "nearby_objects": {
+                "2": 190
+              },
+              "comovement": {},
+              "timers": {},
+              "group_id": null,
+              "altitude": null
+            }
+          }
+        ]
+      }
+    ],
+    "global_vars": {
+      "zone_temperature": 28.82,
+      "alert_threshold": 0.8
+    },
+    "events": []
+  }
+]
