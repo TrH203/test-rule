@@ -156,6 +156,19 @@ class Context:
             events=deepcopy(self.events)
         )
 
+class Tracked_Id_Event:
+    """Lưu trữ mapping giữa tracked_id và event đã xử lý"""
+    def __init__(self):
+        self.mapper: Dict[str, str] = {}
+        
+    def update(self, track_id: str, event_name: str):
+        self.mapper[track_id] = event_name
+    
+    def check(self, tracked_id, event_name) -> bool:
+        return self.mapper.get(tracked_id) == event_name
+    
+    def check(self, track_id: str) -> bool:
+        return track_id in self.mapper
 # ============================================================
 # BASE NODE CLASS
 # ============================================================
@@ -756,20 +769,21 @@ class Timer(Node):
         super().__init__(name)
         self.timer_name = timer_name
         self.duration = duration
+        self.cached_durations: Dict[int, float] = {self.timer_name: {}}
     
     def process(self, ctx: Context) -> Context:
         for obj in ctx.tracked_objects:
-            if self.timer_name not in obj.current_attribute.timers:
+            if obj.track_id not in self.cached_durations[self.timer_name]:
                 # Start timer
-                obj.current_attribute.timers[self.timer_name] = 0
+                self.cached_durations[self.timer_name][obj.track_id] = 0
             else:
                 # Update timer (assume 1 frame = 1 second for simplicity)
-                obj.current_attribute.timers[self.timer_name] += 1
+                self.cached_durations[self.timer_name][obj.track_id] += 1
         
         # Filter objects that exceed duration
         ctx.tracked_objects = [
             obj for obj in ctx.tracked_objects
-            if obj.current_attribute.timers.get(self.timer_name, 0) >= self.duration
+            if self.cached_durations.get(self.timer_name, {}).get(obj.track_id, 0) >= self.duration
         ]
         
         print(f"[{self.name}] {len(ctx.tracked_objects)} objects exceed {self.duration}s")
@@ -949,6 +963,27 @@ class LogicCode(Node):
         print(f"[{self.name}] Custom logic executed")
         return result
 
+class Validate(Node):
+    """Thực thi custom logic code"""
+    
+    def __init__(self, tracked_id_event: Tracked_Id_Event, name="Validate Tracked IDs"):
+        super().__init__(name)
+        self.tracked_id_event = tracked_id_event
+    
+    def process(self, ctx: Context) -> Context:     
+                
+        valid_objects = []
+        for obj in ctx.tracked_objects:
+            if not self.tracked_id_event.check(obj.track_id):
+                print(f"[{self.name}] Validated object ID: {obj.track_id}")
+                valid_objects.append(obj)
+            else:
+                print(f"[{self.name}] Skipped object ID: {obj.track_id}")
+
+        ctx.tracked_objects = valid_objects
+
+        return ctx
+
 
 # ============================================================
 # EVENT MODULE
@@ -957,10 +992,11 @@ class LogicCode(Node):
 class EventSender(Node):
     """Tạo và gửi event"""
     
-    def __init__(self, event_name: str, include_data: bool = True, name: str = "EventSender"):
+    def __init__(self, event_name: str, include_data: bool = True, name: str = "EventSender", tracked_id_event: Tracked_Id_Event = None):
         super().__init__(name)
         self.event_name = event_name
         self.include_data = include_data
+        self.processed_event_tracked_ids = tracked_id_event
     
     def process(self, ctx: Context) -> Context:
         if ctx.tracked_objects:
@@ -986,6 +1022,8 @@ class EventSender(Node):
                         obj_info["group_id"] = obj.current_attribute.group_id
                     
                     event_data["objects"].append(obj_info)
+                    
+                    self.processed_event_tracked_ids.update(track_id=obj.track_id, event_name=self.event_name)
             
             event = Event(
                 name=self.event_name,

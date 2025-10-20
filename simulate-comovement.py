@@ -3,6 +3,8 @@ import math
 from copy import deepcopy
 from typing import List, Tuple
 
+EVENT_TRACKED_ID = Tracked_Id_Event()
+
 def get_bbox_center(bbox: List[float]) -> Tuple[float, float]:
     """Lấy tâm của bounding box"""
     return ((bbox[0] + bbox[2]) / 2, (bbox[1] + bbox[3]) / 2)
@@ -50,20 +52,22 @@ def simulate_co_movement(num_frames: int = 5):
     print("="*70)
     
     # Định nghĩa pipeline
+    validate = Validate(tracked_id_event=EVENT_TRACKED_ID)
     filter_objects = FilterObjects(labels=["person", "vehicle"], name="1.FilterPV")
     check_comovement = CheckCoMovement(time_window=3.0, 
                                        velocity_tolerance=5.0, # Cho phép sai khác vận tốc lên đến 5.0
                                        direction_tolerance=30.0, # Cho phép sai khác hướng lên đến 30 độ
                                        labels=["person", "vehicle"],
                                        name="2.DetectCoMovement")
-    event_sender = EventSender(event_name="COMOVEMENT_DETECTED", name="3.SendAlert")
+    event_sender = EventSender(event_name="COMOVEMENT_DETECTED", name="3.SendAlert", tracked_id_event=EVENT_TRACKED_ID)
     
     # Kết nối
-    # filter_objects.add_next(check_comovement)
-    # check_comovement.add_next(event_sender)
+    validate.add_next(filter_objects)
+    filter_objects.add_next(check_comovement)
+    check_comovement.add_next(event_sender)
     
-    check_comovement.add_next(filter_objects)
-    filter_objects.add_next(event_sender)
+    # check_comovement.add_next(filter_objects)
+    # filter_objects.add_next(event_sender)
     
     # Khởi tạo trạng thái ban đầu
     current_ctx = get_base_context_for_movement()
@@ -109,7 +113,7 @@ def simulate_co_movement(num_frames: int = 5):
         
         # Cần ít nhất 2 prediction để tính vận tốc (tức là từ frame 2 trở đi)
         if frame_id >= 2:
-            results = filter_objects.execute(new_ctx)
+            results = validate.execute(new_ctx)
             current_ctx = results[0] 
             all_events.extend(current_ctx.events)
             

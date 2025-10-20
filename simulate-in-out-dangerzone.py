@@ -6,7 +6,7 @@ from typing import List, Tuple
 
 # ZONE: Danger Zone (0, 0, 100, 100)
 DANGER_ZONE = ZoneArea(zone_id="danger_zone", polygon=[0, 0, 100, 100])
-
+EVENT_TRACKED_ID = Tracked_Id_Event()
 # Hàm helper để di chuyển bbox
 def move_bbox(bbox: List[float], dx: float, dy: float) -> List[float]:
     """Di chuyển bbox theo dx, dy"""
@@ -91,15 +91,18 @@ def simulate_zone_entry_exit(num_frames: int = 5):
         [40, 40, 60, 60],      # Frame 2: INSIDE (Entry Detected)
         [50, 50, 70, 70],      # Frame 3: INSIDE
         [60, 60, 80, 80],      # Frame 4: INSIDE (Timer should exceed here)
+        [60, 60, 80, 80],      # Frame 4: INSIDE (Timer should exceed here)
         [120, 120, 140, 140]   # Frame 5: OUTSIDE (Exit Detected)
     ]
 
     # Pipeline 1: Phát hiện Entry và Bắt đầu Timer
+    validate = Validate(tracked_id_event=EVENT_TRACKED_ID, name="0.Validate")
     filter_person = FilterObjects(labels=["person"], name="1.FilterPerson")
     check_inside = CheckZone(zones=[DANGER_ZONE], condition=ZoneCondition.IS_INSIDE, name="2.CheckInside")
     timer = Timer(timer_name="in_danger_zone", duration=2, name="3.TimerDangerZone") # Trigger sau 2 frames
-    event_sender_timer = EventSender(event_name="ZONE_TIMEOUT", name="4.SendTimeoutAlert")
+    event_sender_timer = EventSender(event_name="ZONE_TIMEOUT", name="4.SendTimeoutAlert", tracked_id_event=EVENT_TRACKED_ID)
 
+    validate.add_next(filter_person)
     filter_person.add_next(check_inside)
     check_inside.add_next(timer)
     timer.add_next(event_sender_timer)
@@ -120,7 +123,7 @@ def simulate_zone_entry_exit(num_frames: int = 5):
         # 2. Thực thi pipeline
         print(f"\n--- Running Frame {frame_id} (Bbox: {current_bbox}) ---")
         
-        results = filter_person.execute(new_ctx)
+        results = validate.execute(new_ctx)
         
         # 3. Cập nhật trạng thái và Lưu lại sự kiện
         current_ctx = results[0] 
@@ -148,4 +151,4 @@ def simulate_zone_entry_exit(num_frames: int = 5):
 
 
 # Gọi hàm mô phỏng
-simulate_zone_entry_exit(num_frames=5)
+simulate_zone_entry_exit(num_frames=6)
