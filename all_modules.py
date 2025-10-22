@@ -271,6 +271,9 @@ class FilterObjects(Node):
         self.labels = labels
     
     def process(self, ctx: Context) -> Context:
+        if ctx == None or ctx.tracked_objects == []:
+            print(f"[{self.name}] Empty context")
+            return ctx
         ctx.tracked_objects = [
             obj for obj in ctx.tracked_objects 
             if obj.obj_name in self.labels
@@ -289,6 +292,9 @@ class CheckZone(Node):
         self.condition = condition
     
     def process(self, ctx: Context) -> Context:
+        if ctx == None or ctx.tracked_objects == []:
+            print(f"[{self.name}] Empty context")
+            return ctx
         filtered = []
         
         for obj in ctx.tracked_objects:
@@ -328,6 +334,9 @@ class CheckDistance(Node):
         self.labels = labels
     
     def process(self, ctx: Context) -> Context:
+        if ctx == None or ctx.tracked_objects == []:
+            print(f"[{self.name}] Empty context")
+            return ctx
         filtered = []
         objects = ctx.tracked_objects
         
@@ -383,6 +392,9 @@ class CheckPPE(Node):
         self.condition = condition
     
     def process(self, ctx: Context) -> Context:
+        if ctx == None or ctx.tracked_objects == []:
+            print(f"[{self.name}] Empty context")
+            return ctx
         filtered = []
         
         for obj in ctx.tracked_objects:
@@ -410,6 +422,9 @@ class CheckUseItem(Node):
         self.item = item
     
     def process(self, ctx: Context) -> Context:
+        if ctx == None or ctx.tracked_objects == []:
+            print(f"[{self.name}] Empty context")
+            return ctx
         filtered = []
         
         for obj in ctx.tracked_objects:
@@ -433,11 +448,14 @@ class CheckPose(Node):
         self.pose_condition = pose_condition
     
     def process(self, ctx: Context) -> Context:
+        if ctx == None or ctx.tracked_objects == []:
+            print(f"[{self.name}] Empty context")
+            return ctx
         filtered = []
         
         for obj in ctx.tracked_objects:
-            if obj.obj_name != "person":
-                continue
+            # if obj.obj_name != "person":
+            #     continue
             
             if not obj.predictions or not obj.predictions[-1].pose:
                 continue
@@ -460,6 +478,10 @@ class CheckMoving(Node):
         self.condition = condition
     
     def process(self, ctx: Context) -> Context:
+        if ctx == None or ctx.tracked_objects == []:
+            print(f"[{self.name}] Empty context")
+            return ctx
+
         filtered = []
         
         for obj in ctx.tracked_objects:
@@ -488,6 +510,10 @@ class AnalyzingSpeed(Node):
         self.time_window = time_window
     
     def process(self, ctx: Context) -> Context:
+        if ctx == None or ctx.tracked_objects == []:
+            print(f"[{self.name}] Empty context")
+            return ctx
+
         filtered = []
         
         for obj in ctx.tracked_objects:
@@ -516,6 +542,10 @@ class CheckState(Node):
         self.state = state
     
     def process(self, ctx: Context) -> Context:
+        if ctx == None or ctx.tracked_objects == []:
+            print(f"[{self.name}] Empty context")
+            return ctx
+
         ctx.tracked_objects = [
             obj for obj in ctx.tracked_objects
             if obj.current_attribute.state == self.state
@@ -535,6 +565,10 @@ class CheckAltitude(Node):
         self.threshold = threshold
     
     def process(self, ctx: Context) -> Context:
+        if ctx == None or ctx.tracked_objects == []:
+            print(f"[{self.name}] Empty context")
+            return ctx
+
         filtered = []
         
         for obj in ctx.tracked_objects:
@@ -570,6 +604,10 @@ class CheckGroup(Node):
         self.labels = labels
     
     def process(self, ctx: Context) -> Context:
+        if ctx == None or ctx.tracked_objects == []:
+            print(f"[{self.name}] Empty context")
+            return ctx
+        
         objects = ctx.tracked_objects
         if self.labels:
             objects = [obj for obj in objects if obj.obj_name in self.labels]
@@ -629,6 +667,10 @@ class CheckCoMovement(Node):
         self.labels = labels
     
     def process(self, ctx: Context) -> Context:
+        if ctx == None or ctx.tracked_objects == []:
+            print(f"[{self.name}] Empty context")
+            return ctx
+        
         objects = ctx.tracked_objects
         filtered = []
         
@@ -687,6 +729,10 @@ class CheckAbruptEvent(Node):
         self.time_window = time_window
     
     def process(self, ctx: Context) -> Context:
+        if ctx == None or ctx.tracked_objects == []:
+            print(f"[{self.name}] Empty context")
+            return ctx
+        
         filtered = []
         
         for obj in ctx.tracked_objects:
@@ -772,6 +818,10 @@ class Timer(Node):
         self.cached_durations: Dict[int, float] = {self.timer_name: {}}
     
     def process(self, ctx: Context) -> Context:
+        if ctx == None or ctx.tracked_objects == []:
+            print(f"[{self.name}] Empty context")
+            return ctx
+        
         for obj in ctx.tracked_objects:
             if obj.track_id not in self.cached_durations[self.timer_name]:
                 # Start timer
@@ -786,7 +836,7 @@ class Timer(Node):
             if self.cached_durations.get(self.timer_name, {}).get(obj.track_id, 0) >= self.duration
         ]
         
-        print(f"[{self.name}] {len(ctx.tracked_objects)} objects exceed {self.duration}s")
+        # print(f"[{self.name}] {len(ctx.tracked_objects)} objects exceed {self.duration}s")
         return ctx
 
 
@@ -798,6 +848,10 @@ class StopTimer(Node):
         self.timer_name = timer_name
     
     def process(self, ctx: Context) -> Context:
+        if ctx == None or ctx.tracked_objects == []:
+            print(f"[{self.name}] Empty context")
+            return ctx
+        
         for obj in ctx.tracked_objects:
             if self.timer_name in obj.current_attribute.timers:
                 final_time = obj.current_attribute.timers[self.timer_name]
@@ -819,6 +873,10 @@ class UpdateVariable(Node):
         self.value = value
     
     def process(self, ctx: Context) -> Context:
+        if ctx == None or ctx.tracked_objects == []:
+            print(f"[{self.name}] Empty context")
+            return ctx
+        
         if self.operation == "set":
             ctx.global_vars[self.var_name] = self.value
         elif self.operation == "increment":
@@ -845,6 +903,10 @@ class Counter(Node):
         self.operation = operation
     
     def process(self, ctx: Context) -> Context:
+        if ctx == None or ctx.tracked_objects == []:
+            print(f"[{self.name}] Empty context")
+            return ctx
+        
         if self.operation == "increment":
             ctx.global_vars[self.var_name] = ctx.global_vars.get(self.var_name, 0) + len(ctx.tracked_objects)
         elif self.operation == "decrement":
@@ -867,6 +929,10 @@ class CheckQuantity(Node):
         self.max_count = max_count
     
     def process(self, ctx: Context) -> Context:
+        if ctx == None or ctx.tracked_objects == []:
+            print(f"[{self.name}] Empty context")
+            return ctx
+        
         count = len([obj for obj in ctx.tracked_objects if obj.obj_name == self.label_name])
         ctx.global_vars[f"{self.label_name}_count"] = count
         
@@ -903,6 +969,10 @@ class ConditionBranch(Node):
         return self
     
     def execute(self, ctx: Context) -> List[Context]:
+        if ctx == None or ctx.tracked_objects == []:
+            print(f"[{self.name}] Empty context")
+            return ctx
+        
         condition_result = self.condition(ctx)
         print(f"[{self.name}] Condition result: {condition_result}")
         
@@ -925,40 +995,70 @@ class ConditionBranch(Node):
 class MergeNode(Node):
     """Node merge: gộp nhiều luồng lại"""
     
-    def __init__(self, name: str = "MergeNode"):
+    def __init__(self, expected_inputs: int = 2, name: str = "MergeNode"):
         super().__init__(name)
-        self.contexts: List[Context] = []
+        self.expected_inputs = expected_inputs
+        self._contexts: List[Context] = []
+        self._received_sources: set = set()
     
-    def add_context(self, ctx: Context):
-        """Thêm context từ các nhánh khác nhau"""
-        self.contexts.append(ctx)
-    
+    def add_context(self, ctx: Context, source_name: str = None):
+        """
+        Add context from a branch.
+        - source_name: optional label (like the upstream node name)
+        """
+        self._contexts.append(ctx)
+        if source_name:
+            self._received_sources.add(source_name)
+        else:
+            # fallback: count anonymous sources
+            self._received_sources.add(len(self._contexts))
+            
     def process(self, ctx: Context) -> Context:
-        # Merge all tracked objects
+        """
+        Called each time an upstream node sends context here.
+        Waits until all expected inputs arrive before merging.
+        """
+        # if ctx == None or ctx.tracked_objects == []:
+        #     print(f"[{self.name}] Empty context")
+        #     return ctx
+        # add incoming context with its source name
+        source_name = getattr(ctx, "from_node", None)
+        self.add_context(ctx, source_name)
+
+        if len(self._received_sources) < self.expected_inputs:
+            print(f"[{self.name}] Waiting... ({len(self._received_sources)}/{self.expected_inputs})")
+            return ctx
+
+        # all inputs ready -> merge
         all_objects = []
         seen_ids = set()
-        
-        for context in self.contexts:
-            for obj in context.tracked_objects:
+        for c in self._contexts:
+            for obj in c.tracked_objects:
                 if obj.track_id not in seen_ids:
                     all_objects.append(obj)
                     seen_ids.add(obj.track_id)
-        
-        ctx.tracked_objects = all_objects
-        self.contexts.clear()
-        
-        print(f"[{self.name}] Merged to {len(ctx.tracked_objects)} objects")
-        return ctx
+
+        merged_ctx = deepcopy(self._contexts[-1])
+        merged_ctx.tracked_objects = all_objects
+        self._contexts.clear()
+        self._received_sources.clear()
+
+        print(f"[{self.name}]  Merged {len(all_objects)} objects from {self.expected_inputs} inputs")
+        return merged_ctx
 
 
 class LogicCode(Node):
     """Thực thi custom logic code"""
     
-    def __init__(self, logic_fn: Callable[[Context], Context], name: str = "LogicCode"):
+    def __init__(self, logic_fn: Callable[[Context], Context], name: str = "LogicCode") -> Context:
         super().__init__(name)
         self.logic_fn = logic_fn
     
     def process(self, ctx: Context) -> Context:
+        if ctx == None or ctx.tracked_objects == []:
+            print(f"[{self.name}] Empty context")
+            return ctx
+        
         result = self.logic_fn(ctx)
         print(f"[{self.name}] Custom logic executed")
         return result
@@ -971,7 +1071,10 @@ class Validate(Node):
         self.tracked_id_event = tracked_id_event
     
     def process(self, ctx: Context) -> Context:     
-                
+        if ctx == None or ctx.tracked_objects == []:
+            print(f"[{self.name}] Empty context")
+            return ctx
+        
         valid_objects = []
         for obj in ctx.tracked_objects:
             if not self.tracked_id_event.check(obj.track_id):
@@ -999,6 +1102,10 @@ class EventSender(Node):
         self.processed_event_tracked_ids = tracked_id_event
     
     def process(self, ctx: Context) -> Context:
+        if ctx == None or ctx.tracked_objects == []:
+            print(f"[{self.event_name}] No tracked_object to send event in FRAME-{ctx.frame_id}")
+            return ctx
+        
         if ctx.tracked_objects:
             event_data = {
                 "tracked_ids": [obj.track_id for obj in ctx.tracked_objects],
@@ -1023,7 +1130,10 @@ class EventSender(Node):
                     
                     event_data["objects"].append(obj_info)
                     
-                    self.processed_event_tracked_ids.update(track_id=obj.track_id, event_name=self.event_name)
+                    if self.processed_event_tracked_ids:
+                        self.processed_event_tracked_ids.update(track_id=obj.track_id, event_name=self.event_name)
+                    else:
+                        pass  # No tracking of processed IDs
             
             event = Event(
                 name=self.event_name,
