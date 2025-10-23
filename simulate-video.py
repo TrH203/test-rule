@@ -2,7 +2,7 @@ import cv2
 import json
 import time
 import numpy as np
-
+import argparse
 BOX_SIZE = 50  # bounding box width/height
 clicked_pos = None
 drawed = []
@@ -40,18 +40,18 @@ def visualize_results(results):
     cv2.destroyAllWindows()
 
 
-def main():
+def main(file_name):
     global clicked_pos
     num_objects = int(input("Enter number of objects: "))
     class_names = [input(f"Class name for object {i + 1}: ") for i in range(num_objects)]
     num_frames = int(input("Enter number of frames: "))
-
+    timestamp = 0
     results = []
 
     for frame_id in range(1, num_frames + 1):
         frame = 255 * np.ones((400, 600, 3), dtype=np.uint8)
         frame_dets = []
-        timestamp = int(time.time() * 1000)
+        timestamp += 1000
         # Drawed
         for pos in drawed:
             cv2.rectangle(frame, pos, (pos[0] + BOX_SIZE, pos[1] + BOX_SIZE), (222, 222, 222), 1)
@@ -98,9 +98,9 @@ def main():
     cv2.destroyAllWindows()
 
     # Save JSON file
-    with open("simulation_result.json", "w") as f:
+    with open(file_name, "w") as f:
         json.dump(results, f, indent=2)
-    print("\n✅ Saved to simulation_result.json")
+    print(f"\n✅ Saved to {file_name}")
 
     # Prompt visualization
     print("Press 'v' to visualize result or any other key to quit...")
@@ -116,5 +116,8 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser(description="Process a JSON file and print contexts.")
+    parser.add_argument("-o", required=True, help="Path to the out JSON file")
+    args = parser.parse_args()
+    main(file_name=args.o)
 

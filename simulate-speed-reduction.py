@@ -17,13 +17,14 @@ def simulate_zone_entry_exit(data_file: str = None):
     
     # Pipeline 1: Phát hiện Entry và Bắt đầu Timer
     validate = Validate(tracked_id_event=EVENT_TRACKED_ID, name="0.Validate")
-    # filter_person = FilterObjects(labels=None, name="1.FilterPerson")
-    check_inside = CheckZone(zones=[DANGER_ZONE], condition=ZoneCondition.IS_INSIDE, name="1.CheckInside")
-    timer = Timer(timer_name="in_danger_zone", duration=2, name="2.TimerDangerZone") # Trigger sau 2 frames
-    event_sender_timer = EventSender(event_name="ZONE_TIMEOUT", name="3.SendTimeoutAlert", tracked_id_event=EVENT_TRACKED_ID)
+    filter_vehicle = FilterObjects(labels=["vehicle"], name="1.FilterPerson")
+    check_speed = AnalyzingSpeed(condition=SpeedCondition.IS_FASTER_THAN, value=1, time_window=2, name="2.CheckSpeed")
+    timer = Timer(timer_name="in_danger_zone", duration=2, name="3.TimerDangerZone") # Trigger sau 2 frames
+    event_sender_timer = EventSender(event_name="ZONE_TIMEOUT", name="4.SendTimeoutAlert", tracked_id_event=EVENT_TRACKED_ID)
 
-    validate.add_next(check_inside)
-    check_inside.add_next(timer)
+    validate.add_next(filter_vehicle)
+    filter_vehicle.add_next(check_speed)
+    check_speed.add_next(timer)
     timer.add_next(event_sender_timer)
 
     # Khởi tạo trạng thái ban đầu
@@ -56,4 +57,4 @@ def simulate_zone_entry_exit(data_file: str = None):
 
 
 # Gọi hàm mô phỏng
-simulate_zone_entry_exit(data_file="simulation-in-out-dangerzone2.json")
+simulate_zone_entry_exit(data_file="simulation-in-out-dangerzone2.json") 
