@@ -1,0 +1,272 @@
+[
+  {
+    "frame_id": 1,
+    "timestamp": 1761115980633,
+    "model_result": [
+      {
+        "tracked_id": 1,
+        "bbox": [
+          376,
+          61,
+          426,
+          111
+        ],
+        "score": 0.8,
+        "class_name": "customer",
+        "keypoints": [],
+        "segmentation": [],
+        "color": "green",
+        "state": "moving",
+        "action": null
+      },
+      {
+        "tracked_id": 2,
+        "bbox": [
+          56,
+          274,
+          106,
+          324
+        ],
+        "score": 0.87,
+        "class_name": "staff",
+        "keypoints": [],
+        "segmentation": [],
+        "color": "green",
+        "state": "moving",
+        "action": null
+      },
+      {
+        "tracked_id": 3,
+        "bbox": [
+          377,
+          341,
+          427,
+          391
+        ],
+        "score": 0.93,
+        "class_name": "staff",
+        "keypoints": [],
+        "segmentation": [],
+        "color": "green",
+        "state": "moving",
+        "action": null
+      }
+    ]
+  },
+  {
+    "frame_id": 2,
+    "timestamp": 1761115985494,
+    "model_result": [
+      {
+        "tracked_id": 1,
+        "bbox": [
+          376,
+          63,
+          426,
+          113
+        ],
+        "score": 0.8,
+        "class_name": "customer",
+        "keypoints": [],
+        "segmentation": [],
+        "color": "green",
+        "state": "moving",
+        "action": "raise_hand"
+      },
+      {
+        "tracked_id": 2,
+        "bbox": [
+          105,
+          249,
+          155,
+          299
+        ],
+        "score": 0.87,
+        "class_name": "staff",
+        "keypoints": [],
+        "segmentation": [],
+        "color": "green",
+        "state": "moving",
+        "action": null
+      },
+      {
+        "tracked_id": 3,
+        "bbox": [
+          378,
+          343,
+          428,
+          393
+        ],
+        "score": 0.93,
+        "class_name": "staff",
+        "keypoints": [],
+        "segmentation": [],
+        "color": "green",
+        "state": "moving",
+        "action": null
+      }
+    ]
+  },
+  {
+    "frame_id": 3,
+    "timestamp": 1761115992129,
+    "model_result": [
+      {
+        "tracked_id": 1,
+        "bbox": [
+          375,
+          63,
+          425,
+          113
+        ],
+        "score": 0.8,
+        "class_name": "customer",
+        "keypoints": [],
+        "segmentation": [],
+        "color": "green",
+        "state": "moving",
+        "action": null
+      },
+      {
+        "tracked_id": 2,
+        "bbox": [
+          176,
+          207,
+          226,
+          257
+        ],
+        "score": 0.87,
+        "class_name": "staff",
+        "keypoints": [],
+        "segmentation": [],
+        "color": "green",
+        "state": "moving",
+        "action": "raise_hand"
+      },
+      {
+        "tracked_id": 3,
+        "bbox": [
+          380,
+          343,
+          430,
+          393
+        ],
+        "score": 0.93,
+        "class_name": "staff",
+        "keypoints": [],
+        "segmentation": [],
+        "color": "green",
+        "state": "moving",
+        "action": null
+      }
+    ]
+  },
+  {
+    "frame_id": 4,
+    "timestamp": 1761115997130,
+    "model_result": [
+      {
+        "tracked_id": 1,
+        "bbox": [
+          375,
+          63,
+          425,
+          113
+        ],
+        "score": 0.8,
+        "class_name": "customer",
+        "keypoints": [],
+        "segmentation": [],
+        "color": "green",
+        "state": "moving",
+        "action": "raise_hand"
+      },
+      {
+        "tracked_id": 2,
+        "bbox": [
+          272,
+          154,
+          322,
+          204
+        ],
+        "score": 0.87,
+        "class_name": "staff",
+        "keypoints": [],
+        "segmentation": [],
+        "color": "green",
+        "state": "moving",
+        "action": null
+      },
+      {
+        "tracked_id": 3,
+        "bbox": [
+          380,
+          342,
+          430,
+          392
+        ],
+        "score": 0.93,
+        "class_name": "staff",
+        "keypoints": [],
+        "segmentation": [],
+        "color": "green",
+        "state": "moving",
+        "action": null
+      }
+    ]
+  },
+  {
+    "frame_id": 5,
+    "timestamp": 1761116001091,
+    "model_result": [
+      {
+        "tracked_id": 1,
+        "bbox": [
+          380,
+          59,
+          430,
+          109
+        ],
+        "score": 0.8,
+        "class_name": "customer",
+        "keypoints": [],
+        "segmentation": [],
+        "color": "green",
+        "state": "moving",
+        "action": null
+      },
+      {
+        "tracked_id": 2,
+        "bbox": [
+          356,
+          86,
+          406,
+          136
+        ],
+        "score": 0.87,
+        "class_name": "staff",
+        "keypoints": [],
+        "segmentation": [],
+        "color": "green",
+        "state": "moving",
+        "action": "raise_hand"
+      },
+      {
+        "tracked_id": 3,
+        "bbox": [
+          379,
+          345,
+          429,
+          395
+        ],
+        "score": 0.93,
+        "class_name": "staff",
+        "keypoints": [],
+        "segmentation": [],
+        "color": "green",
+        "state": "moving",
+        "action": null
+      }
+    ]
+  }
+]
